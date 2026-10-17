@@ -84,6 +84,21 @@ Every page must use the same header structure and behavior as the existing heade
 - Keep imagery secondary to the information and use consistent image treatment across pages.
 - Use coral or ocean blue only for a few small details, not as a second competing identity.
 
+### Schematic map illustrations
+
+Use the `.map` SVG in `index.html` as the reference for reusable country or regional map artwork. It is an editorial illustration, not a navigational or geographic reference map.
+
+- **Composition:** center one recognizable, simplified land silhouette inside a quiet, rounded illustration panel. Keep generous breathing room around the shape.
+- **Backdrop:** use a pale sage panel (`#E5EBDC`), with a large, soft green disc behind the land and a smaller fine-line ring as depth cues. Keep these geometric layers low contrast and behind the map.
+- **Silhouette:** fill the land with a deep-to-leaf green gradient (`#08785C` to `#4B9A65`) and give it a thin warm-white outline (`#F3F3DF`). Use a subtle soft shadow to lift it off the backdrop.
+- **Interior detail:** add a few broad, flowing contour or route lines in pale lime (`#B6D475`) at low opacity. Keep the linework sparse, smooth and decorative; it should not imply exact borders or data that is not shown.
+- **Location marker:** identify one important city with a small warm-yellow dot and a thin yellow halo. Place its short label nearby in a clear sans-serif style. Yellow is the focal highlight and should be used consistently for map markers.
+- **Context label:** if useful, add a small uppercase region caption near the lower edge of the illustration. Treat it as quiet metadata, not a competing headline.
+- **Scale:** preserve the map's aspect ratio and scale it fluidly within its frame. Do not stretch the silhouette. On small screens, keep the marker and its label inside the SVG viewBox and leave enough room to read them.
+- **Reuse:** preserve the same silhouette treatment, background discs, contour-line style, marker and label typography across related maps. Change the land shape and place names as needed; keep all other map elements visually consistent.
+- **Accessibility:** give the SVG `role="img"` and a concise accessible label describing the country or region. Mark purely decorative contour details as presentation-only where appropriate. Do not rely on color alone to distinguish a marker or route.
+- **Accuracy:** label schematic artwork as an illustration when context could lead people to mistake it for a precise map. Do not invent borders, routes or geographic claims.
+
 ## Interaction and accessibility
 
 - Use smooth transitions for hover, opening panels and active states; keep animations short and purposeful.
