@@ -29,6 +29,20 @@
     @media(max-width:650px){.country-intro{padding:43px 0 27px}.country-intro h1{font-size:49px}.profile-section{padding:18px 0 37px}.profile-section + .profile-section{padding-top:18px}.population-language{grid-template-columns:1fr;gap:10px}.profile-card{padding:19px}.population-number{font-size:40px}.language-name{margin:16px 0}.profile-section-heading{display:block;margin-bottom:14px}.profile-section-heading p{margin-top:10px}.cities-card{grid-template-columns:1fr;padding:12px;gap:13px}.map-frame{min-height:260px}.brazil-map{height:238px}.city-list{padding:0 7px}.city-list li{padding:11px 0}.facts-section{padding:0 0 40px}.fact-grid{grid-template-columns:1fr 1fr;gap:8px}.fact-tile{padding:14px;min-height:unset}.culture-section{padding:42px 0 48px}.culture-grid{gap:10px}.chart-card{padding:18px 15px}.pie-layout{grid-template-columns:minmax(110px,.85fr) 1.15fr;gap:12px}.pie-chart{width:min(100%,145px)}.pie-legend{gap:6px}.pie-legend li{font-size:8px;gap:5px}.pie-legend strong{font-size:8px}.ethnicity-row{grid-template-columns:minmax(85px,.8fr) 2fr 42px;gap:7px}.ethnicity-row span{font-size:9px}}
     @media(max-width:390px){.fact-grid{grid-template-columns:1fr}.pie-layout{grid-template-columns:112px 1fr}.pie-chart{width:112px}.profile-section-heading h2{font-size:30px}}
   </style>
+<style>
+.brazil-map{transition:filter .28s ease,opacity .28s ease,transform .28s ease}
+.map-frame.preview-active .brazil-map{filter:blur(5px) drop-shadow(0 12px 13px #35563724);opacity:.48;transform:scale(.97)}
+.city-preview{position:absolute;inset:0;z-index:3;opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s;pointer-events:none;background:#142c2922}
+.city-preview.visible{opacity:1;visibility:visible}
+.city-preview img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.92)}
+.city-preview:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#10271fbd)}
+.city-preview-label{position:absolute;z-index:1;left:18px;bottom:18px;color:#fffefa;font:600 21px/1.2 "Manrope",sans-serif;text-shadow:0 2px 12px #142c2999}
+.city-list li{cursor:pointer;transition:background .2s ease,padding .2s ease}
+.city-list li:hover{background:#e8eddf;padding-left:8px;padding-right:8px}
+.city-list strong{font:700 16px "Manrope"}
+.city-list small{font-size:10px;margin-top:4px}
+@media(max-width:650px){.city-preview-label{font-size:18px}}
+</style>
 </head>
 <body>
   <div class="topline"></div>
@@ -46,7 +60,7 @@
       <article class="profile-card language-card"><div><h2 data-t="languageTitle">Langues officielles</h2><div class="language-name" id="officialLanguage">Portugais brésilien</div></div><div class="language-detail"><span data-t="languageNote">Locuteurs francophones au Brésil</span><strong id="frenchSpeakers">620 000</strong></div></article>
     </div></section>
     <section class="profile-section"><div class="wrap"><div class="profile-section-heading"><div><div class="kicker" data-t="citiesKicker">02 · Territoire</div><h2 data-t="citiesTitle">Trois grandes villes</h2></div><p data-t="citiesNote">São Paulo, Rio de Janeiro et Salvador da Bahia · présentées dans l’ordre indiqué dans la fiche.</p></div>
-      <div class="cities-card"><div class="map-frame"><svg class="brazil-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="group" aria-label="Carte schématique du Brésil et villes principales">
+    <div class="cities-card"><div class="map-frame"><svg class="brazil-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="group" aria-label="Carte schématique du Brésil et villes principales">
         <defs>
           <linearGradient id="brazilGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#00B049"/><stop offset="50%" stop-color="#009B3A"/><stop offset="100%" stop-color="#007A2D"/></linearGradient>
           <radialGradient id="yellowDot" cx="35%" cy="35%" r="65%"><stop offset="0%" stop-color="#FFF200"/><stop offset="60%" stop-color="#FFDF00"/><stop offset="100%" stop-color="#D4B200"/></radialGradient>
@@ -61,7 +75,7 @@
           <g class="map-city-marker" data-city-index="1" tabindex="0" role="button" aria-label="Rio de Janeiro"><circle class="marker-hit" cx="395" cy="420" r="18" fill="transparent"/><circle class="marker-visible" cx="395" cy="420" r="7.5" fill="url(#yellowDot)" stroke="#000000" stroke-width="2.5"/></g>
           <g class="map-city-marker" data-city-index="0" tabindex="0" role="button" aria-label="São Paulo"><circle class="marker-hit" cx="360" cy="435" r="18" fill="transparent"/><circle class="marker-visible" cx="360" cy="435" r="8.5" fill="url(#yellowDot)" stroke="#000000" stroke-width="2.5"/></g>
         </g>
-      </svg><span class="map-caption" data-t="mapCaption">Illustration schématique · positions approximatives</span><div class="map-tooltip" id="mapTooltip" role="tooltip"></div></div><ol class="city-list" id="cityList"></ol></div>
+      </svg><span class="map-caption" data-t="mapCaption">Illustration schématique · positions approximatives</span><div class="map-tooltip" id="mapTooltip" role="tooltip"></div><div class="city-preview" id="cityPreview" aria-hidden="true"><img id="cityPreviewImage" alt=""><span class="city-preview-label" id="cityPreviewLabel"></span></div></div><ol class="city-list" id="cityList"></ol></div>
     </div></section>
     <section class="facts-section"><div class="wrap"><div class="profile-section-heading"><div><div class="kicker" data-t="factsKicker2">03 · Institutions</div><h2 data-t="factsTitle2">Repères nationaux</h2></div></div><div class="fact-grid" id="factGrid"></div></div></section>
     <section class="culture-section"><div class="wrap"><div class="profile-section-heading"><div><div class="kicker" data-t="cultureKicker">04 · Société</div><h2 data-t="cultureTitle">Une société plurielle</h2></div></div><div class="culture-grid"><article class="chart-card"><h3 data-t="religionTitle">Principales religions du pays</h3><p class="chart-note" data-t="chartNote">Proportions de la population, selon les fiches informatives.</p><div class="pie-layout"><div class="pie-chart" id="religionPie" role="img" aria-label="Répartition des religions au Brésil"></div><ul class="pie-legend" id="religionLegend"></ul></div><p class="source-note" id="religionSource"></p></article><article class="chart-card"><h3 data-t="ethnicityTitle">Principales ethnies</h3><p class="chart-note" data-t="chartNote">Proportions de la population, selon les fiches informatives.</p><div class="ethnicity-chart" id="ethnicityChart"></div></article></div></div></section>
@@ -89,5 +103,8 @@
   function open(id){$('#'+id).classList.add('open');document.body.style.overflow='hidden'}function close(id){$('#'+id).classList.remove('open');document.body.style.overflow=''}let toastTimer;function toast(s){const el=$('#toast');el.textContent=s;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2600)}
   $('#lang').onclick=()=>{lang=lang==='fr'?'en':lang==='en'?'pt':'fr';render()};$('#loginOpen').onclick=()=>open('loginOverlay');$('#profileOpen').onclick=()=>open('portalOverlay');document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>close(b.dataset.close));document.querySelectorAll('.overlay').forEach(o=>o.onclick=e=>{if(e.target===o)close(o.id)});document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.overlay.open').forEach(o=>close(o.id))});$('#loginForm').onsubmit=e=>{e.preventDefault();signedIn=$('#username').value.trim();if(!signedIn)return;$('#loginForm').reset();close('loginOverlay');render();open('portalOverlay')};$('#logout').onclick=()=>{signedIn='';close('portalOverlay');render()};render();
   </script>
+<script>
+(()=>{const frame=document.querySelector('.map-frame'),list=document.querySelector('#cityList'),preview=document.querySelector('#cityPreview'),img=document.querySelector('#cityPreviewImage'),label=document.querySelector('#cityPreviewLabel');if(!frame||!list||!preview)return;const photos=['img/city/São-Paulo.jpg','img/city/Rio-de-Janeiro.jpg','img/city/salvador-baiya.jpg'];function show(row){const rows=[...list.querySelectorAll('li')],i=rows.indexOf(row);if(i<0||!photos[i])return;img.src=photos[i];img.alt=row.querySelector('strong')?.textContent||'';label.textContent=img.alt;preview.classList.add('visible');frame.classList.add('preview-active')}function hide(){preview.classList.remove('visible');frame.classList.remove('preview-active')}list.addEventListener('pointerover',e=>{const row=e.target.closest('li');if(row&&!row.contains(e.relatedTarget))show(row)});list.addEventListener('pointerout',e=>{const row=e.target.closest('li');if(row&&!row.contains(e.relatedTarget))hide()})})();
+</script>
 </body>
 </html>
