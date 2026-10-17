@@ -53,16 +53,3 @@
 | **Date de fin du mandat** | 31 décembre 2026 |
 
 ---
-
-## BIBLIOGRAPHIE
-
-* Auteur inconnu, « Portail: Brésil/ville », *Vikidia*, [En ligne] [https://fr.vikidia.org/wiki/Portail:Br%C3%A9sil/Villes](https://fr.vikidia.org/wiki/Portail:Br%C3%A9sil/Villes) (page consultée le 15 septembre 2026).
-* Auteur inconnu, « Luiz Inácio Lula da Silva », *Wikipedia*, [En ligne] [https://fr.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vie_priv%C3%A9e_et_familiale](https://fr.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vie_priv%C3%A9e_et_familiale) (page consultée le 16 septembre 2026).
-* Auteur inconnu, « Brésil », *Wikipedia*, [En ligne] [https://fr.wikipedia.org/wiki/Br%C3%A9sil](https://fr.wikipedia.org/wiki/Br%C3%A9sil) (page consultée le 16 septembre 2026).
-* Auteur inconnu, « Élection présidentielle brésilienne de 2022 », *Wikipedia*, [En ligne] [https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_br%C3%A9silienne_de_2022](https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_br%C3%A9silienne_de_2022) (page consultée le 16 septembre 2026).
-* Auteur inconnu, « Brésil - Espérance de vie à la naissance (année) », *perspective.usherbrooke*, [En ligne] [https://perspective.usherbrooke.ca/bilan/servlet/BMTendanceStatPays?codePays=BRA&codeStat=SP.DYN.LE00.IN&codeTheme=3&langue=fr](https://perspective.usherbrooke.ca/bilan/servlet/BMTendanceStatPays?codePays=BRA&codeStat=SP.DYN.LE00.IN&codeTheme=3&langue=fr) (page consultée le 17 septembre 2026).
-* Auteur inconnu, « Population du Brésil », *Worldometer*, [En ligne] [https://www.worldometers.info/fr/population-mondiale/bresil-population/](https://www.worldometers.info/fr/population-mondiale/bresil-population/) (page consultée le 17 septembre 2026).
-* Auteur inconnu, « Brésil | Centre de la francophonie des Amériques », *francophoniedesamériques*, [En ligne] [https://francophoniedesameriques.com/francophonie-ameriques/amerique-sud/bresil](https://francophoniedesameriques.com/francophonie-ameriques/amerique-sud/bresil) (page consultée le 17 septembre 2026).
-* Auteur inconnu, « Religion au Brésil », *Wikipedia*, [En ligne] [https://fr.wikipedia.org/wiki/Religion_au_Br%C3%A9sil](https://fr.wikipedia.org/wiki/Religion_au_Br%C3%A9sil) (page consultée le 19 septembre 2026).
-* La Tribune, « Brésil: Comment le scandale Bolsonaro rebat la bataille UE-Mercosur… et les cartes de l'Europe », *La Tribune*, [En ligne] [https://www.latribune.fr/article/economie/international/2669309956155314/bresil-comment-le-scandale-bolsonaro-rebat-la-bataille-ue-mercosur-et-les-cartes-de-l-europe](https://www.latribune.fr/article/economie/international/2669309956155314/bresil-comment-le-scandale-bolsonaro-rebat-la-bataille-ue-mercosur-et-les-cartes-de-l-europe) (page consultée le 19 septembre 2026).
-* Gouvernement du Canada, « Conseils aux voyageurs pour le Brésil », [En ligne] [https://voyage.gc.ca/destinations/bresil](https://voyage.gc.ca/destinations/bresil) (page consultée le 19 septembre 2026).

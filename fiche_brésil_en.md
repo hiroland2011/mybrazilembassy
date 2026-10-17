@@ -53,7 +53,3 @@
 | **End date of mandate** | December 31, 2026 |
 
 ---
-
-## BIBLIOGRAPHY
-
-* Unknown Author, "Portail: Brésil/ville",

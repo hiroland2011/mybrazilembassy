@@ -53,16 +53,3 @@
 | **Data do fim do mandato** | 31 de dezembro de 2026 |
 
 ---
-
-## BIBLIOGRAFIA
-
-* Autor desconhecido, « Portail: Brésil/ville », *Vikidia*, [Online] [https://fr.vikidia.org/wiki/Portail:Br%C3%A9sil/Villes](https://fr.vikidia.org/wiki/Portail:Br%C3%A9sil/Villes) (página consultada em 15 de setembro de 2026).
-* Autor desconhecido, « Luiz Inácio Lula da Silva », *Wikipedia*, [Online] [https://fr.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vie_priv%C3%A9e_et_familiale](https://fr.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva#Vie_priv%C3%A9e_et_familiale) (página consultada em 16 de setembro de 2026).
-* Autor desconhecido, « Brésil », *Wikipedia*, [Online] [https://fr.wikipedia.org/wiki/Br%C3%A9sil](https://fr.wikipedia.org/wiki/Br%C3%A9sil) (página consultada em 16 de setembro de 2026).
-* Autor desconhecido, « Élection présidentielle brésilienne de 2022 », *Wikipedia*, [Online] [https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_br%C3%A9silienne_de_2022](https://fr.wikipedia.org/wiki/%C3%89lection_pr%C3%A9sidentielle_br%C3%A9silienne_de_2022) (página consultada em 16 de setembro de 2026).
-* Autor desconhecido, « Brésil - Espérance de vie à la naissance (année) », *perspective.usherbrooke*, [Online] [https://perspective.usherbrooke.ca/bilan/servlet/BMTendanceStatPays?codePays=BRA&codeStat=SP.DYN.LE00.IN&codeTheme=3&langue=fr](https://perspective.usherbrooke.ca/bilan/servlet/BMTendanceStatPays?codePays=BRA&codeStat=SP.DYN.LE00.IN&codeTheme=3&langue=fr) (página consultada em 17 de setembro de 2026).
-* Autor desconhecido, « Population du Brésil », *Worldometer*, [Online] [https://www.worldometers.info/fr/population-mondiale/bresil-population/](https://www.worldometers.info/fr/population-mondiale/bresil-population/) (página consultada em 17 de setembro de 2026).
-* Autor desconhecido, « Brésil | Centre de la francophonie des Amériques », *francophoniedesamériques*, [Online] [https://francophoniedesameriques.com/francophonie-ameriques/amerique-sud/bresil](https://francophoniedesameriques.com/francophonie-ameriques/amerique-sud/bresil) (página consultada em 17 de setembro de 2026).
-* Autor desconhecido, « Religion au Brésil », *Wikipedia*, [Online] [https://fr.wikipedia.org/wiki/Religion_au_Br%C3%A9sil](https://fr.wikipedia.org/wiki/Religion_au_Br%C3%A9sil) (página consultada em 19 de setembro de 2026).
-* La Tribune, « Brésil: Comment le scandale Bolsonaro rebat la bataille UE-Mercosur… et les cartes de l'Europe », *La Tribune*, [Online] [https://www.latribune.fr/article/economie/international/2669309956155314/bresil-comment-le-scandale-bolsonaro-rebat-la-bataille-ue-mercosur-et-les-cartes-de-l-europe](https://www.latribune.fr/article/economie/international/2669309956155314/bresil-comment-le-scandale-bolsonaro-rebat-la-bataille-ue-mercosur-et-les-cartes-de-l-europe) (página consultada em 19 de setembro de 2026).
-* Governo do Canadá, « Conselho aos viajantes para o Brasil », [Online] [https://voyage.gc.ca/destinations/bresil](https://voyage.gc.ca/destinations/bresil) (página consultada em 19 de setembro de 2026).
