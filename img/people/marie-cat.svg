@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-label="Illustration de chat">
+  <defs>
+    <linearGradient id="catBg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FEF3C7"/><stop offset="100%" stop-color="#FDE68A"/></linearGradient>
+    <linearGradient id="catFur" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#FB923C"/><stop offset="100%" stop-color="#EA580C"/></linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity=".08"/></filter>
+  </defs>
+  <rect width="360" height="360" rx="180" fill="url(#catBg)"/>
+  <circle cx="180" cy="180" r="172" fill="none" stroke="#fff" stroke-width="4" opacity=".6"/>
+  <g filter="url(#softShadow)">
+    <path d="M85 180 100 85 175 140Z" fill="url(#catFur)"/><path d="m100 165 10-65 50 40Z" fill="#FBCFE8"/>
+    <path d="m275 180-15-95-75 55Z" fill="url(#catFur)"/><path d="m260 165-10-65-50 40Z" fill="#FBCFE8"/>
+    <ellipse cx="180" cy="205" rx="100" ry="90" fill="url(#catFur)"/><ellipse cx="180" cy="228" rx="48" ry="38" fill="#fff"/>
+    <path d="M180 122v16M165 126l4 14M195 126l-4 14" stroke="#C2410C" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="173,206 187,206 180,214" fill="#F43F5E"/><path d="M170 218Q180 226 180 220Q180 226 190 218" stroke="#431407" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="m125 215-55-10m50 20-55 3m170-13 55-10m-50 20 55 3" stroke="#7C2D12" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="122" cy="225" rx="15" ry="9" fill="#F43F5E" opacity=".45"/><ellipse cx="238" cy="225" rx="15" ry="9" fill="#F43F5E" opacity=".45"/>
+    <circle cx="138" cy="188" r="11" fill="#1C1917"/><circle cx="135" cy="184" r="4" fill="#fff"/><circle cx="141" cy="191" r="1.5" fill="#fff"/>
+    <circle cx="222" cy="188" r="11" fill="#1C1917"/><circle cx="219" cy="184" r="4" fill="#fff"/><circle cx="225" cy="191" r="1.5" fill="#fff"/>
+  </g>
+  <path d="M80 80Q80 90 70 90Q80 90 80 100Q80 90 90 90Q80 90 80 80Z" fill="#fff" opacity=".9"/><circle cx="285" cy="265" r="6" fill="#fff" opacity=".8"/>
+</svg>

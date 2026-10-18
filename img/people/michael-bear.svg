@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-label="Illustration d’ours">
+  <defs>
+    <linearGradient id="bearBg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFE8EC"/><stop offset="100%" stop-color="#FCD2D9"/></linearGradient>
+    <linearGradient id="bearFur" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#96613D"/><stop offset="100%" stop-color="#7A4B2A"/></linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity=".08"/></filter>
+  </defs>
+  <rect width="360" height="360" rx="180" fill="url(#bearBg)"/>
+  <circle cx="180" cy="180" r="172" fill="none" stroke="#fff" stroke-width="4" opacity=".6"/>
+  <g filter="url(#softShadow)">
+    <circle cx="105" cy="115" r="42" fill="url(#bearFur)"/><circle cx="105" cy="115" r="26" fill="#FBCFE8"/>
+    <circle cx="255" cy="115" r="42" fill="url(#bearFur)"/><circle cx="255" cy="115" r="26" fill="#FBCFE8"/>
+    <circle cx="180" cy="200" r="105" fill="url(#bearFur)"/>
+    <ellipse cx="180" cy="215" rx="42" ry="32" fill="#FFF8F0"/>
+    <path d="M168 200C168 192 192 192 192 200 192 210 180 216 180 216 180 216 168 210 168 200Z" fill="#4A2E18"/>
+    <path d="M170 218Q180 225 180 220Q180 225 190 218" stroke="#4A2E18" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="120" cy="215" rx="16" ry="10" fill="#F472B6" opacity=".55"/><ellipse cx="240" cy="215" rx="16" ry="10" fill="#F472B6" opacity=".55"/>
+    <circle cx="138" cy="182" r="11" fill="#29180E"/><circle cx="135" cy="178" r="4" fill="#fff"/><circle cx="141" cy="185" r="1.5" fill="#fff"/>
+    <circle cx="222" cy="182" r="11" fill="#29180E"/><circle cx="219" cy="178" r="4" fill="#fff"/><circle cx="225" cy="185" r="1.5" fill="#fff"/>
+  </g>
+  <path d="M70 80Q70 90 60 90Q70 90 70 100Q70 90 80 90Q70 90 70 80Z" fill="#fff" opacity=".9"/><circle cx="290" cy="90" r="5" fill="#fff" opacity=".8"/><circle cx="300" cy="250" r="7" fill="#fff" opacity=".7"/>
+</svg>

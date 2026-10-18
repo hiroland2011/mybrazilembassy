@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-label="Illustration de lapin">
+  <defs>
+    <linearGradient id="bunnyBg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#EBF4FF"/><stop offset="100%" stop-color="#C3DAFE"/></linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity=".08"/></filter>
+  </defs>
+  <rect width="360" height="360" rx="180" fill="url(#bunnyBg)"/>
+  <circle cx="180" cy="180" r="172" fill="none" stroke="#fff" stroke-width="4" opacity=".6"/>
+  <g filter="url(#softShadow)">
+    <g transform="rotate(-8 125 110)"><rect x="100" y="30" width="50" height="130" rx="25" fill="#fff"/><rect x="110" y="45" width="30" height="100" rx="15" fill="#F472B6" opacity=".4"/></g>
+    <g transform="rotate(8 235 110)"><rect x="210" y="30" width="50" height="130" rx="25" fill="#fff"/><rect x="220" y="45" width="30" height="100" rx="15" fill="#F472B6" opacity=".4"/></g>
+    <circle cx="180" cy="210" r="98" fill="#fff"/>
+    <ellipse cx="180" cy="202" rx="7" ry="5" fill="#F472B6"/>
+    <path d="M168 210 Q174 217 180 211 Q186 217 192 210" stroke="#5A6A85" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="118" cy="215" rx="18" ry="11" fill="#FB7185" opacity=".4"/><ellipse cx="242" cy="215" rx="18" ry="11" fill="#FB7185" opacity=".4"/>
+    <circle cx="138" cy="190" r="10" fill="#2D3748"/><circle cx="135" cy="186" r="3.5" fill="#fff"/><circle cx="141" cy="193" r="1.5" fill="#fff"/>
+    <path d="M212 192 Q222 180 232 192" stroke="#2D3748" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <g transform="translate(245 240) rotate(-15)"><path d="M0 0 18-8 Q22 10 2 32Z" fill="#FB923C"/><path d="M1-2Q-6-10-2-16Q3-10 3-3" stroke="#4ADE80" stroke-width="2.5" fill="none"/></g>
+  </g>
+  <path d="M290 85Q290 95 280 95Q290 95 290 105Q290 95 300 95Q290 95 290 85Z" fill="#fff" opacity=".9"/><circle cx="75" cy="260" r="6" fill="#fff" opacity=".8"/>
+</svg>
