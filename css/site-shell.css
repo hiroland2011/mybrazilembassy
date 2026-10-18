@@ -7,17 +7,29 @@ body { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: col
 main { flex: 1 0 auto; }
 .site-footer { flex: 0 0 auto; margin-top: auto; }
 .site-header { position: sticky; top: 0; z-index: 40; background: rgb(245 244 239 / 96%); border-bottom: 1px solid rgb(20 44 41 / 10%); backdrop-filter: blur(16px); }
-.site-header .nav { position: relative; width: min(1180px, calc(100% - 48px)); min-height: 78px; height: auto; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+.site-header .nav { position: relative; width: min(1180px, calc(100% - 48px)); min-height: 78px; height: auto; margin-inline: auto; display: flex; align-items: center; justify-content: flex-start; gap: 22px; }
 .site-header .brand { flex: 0 0 auto; display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .site-header .brandmark { width: 39px; height: 39px; border-radius: 50%; display: block; object-fit: cover; }
 .site-header .brandmark::after { content: none; }
 .site-header .brandtext { color: #142c29; font: 700 13px/1.2 'Manrope', sans-serif; letter-spacing: .04em; text-transform: uppercase; }
 .site-header .brandtext small { display: block; margin-top: 4px; color: #6f7e78; font: 500 10px/1.2 'DM Sans', sans-serif; letter-spacing: .14em; }
-.site-header .links { display: flex; align-items: center; justify-content: center; gap: clamp(12px, 1.7vw, 26px); }
+.site-header .links { display: flex; align-items: center; justify-content: center; gap: clamp(12px, 1.7vw, 26px); margin-left: auto; margin-right: clamp(40px, 4.5vw, 64px); }
 .site-header .links a { color: #53635c; font-size: 12px; font-weight: 600; text-decoration: none; white-space: nowrap; transition: color .2s ease; }
 .site-header .links a:hover, .site-header .links a.current { color: #08785c; }
 .site-header .links a.current { position: relative; }
-.site-header .links a.current::after { position: absolute; right: 0; bottom: -9px; left: 0; height: 2px; background: #d8bd3f; content: ''; }
+.site-header .links > a.current::after { position: absolute; right: 0; bottom: -9px; left: 0; height: 2px; background: #d8bd3f; content: ''; }
+.site-header .header-facts-menu { position: relative; }
+.site-header .header-facts-menu > summary { position: relative; color: #53635c; font-size: 12px; font-weight: 600; white-space: nowrap; cursor: pointer; list-style: none; }
+.site-header .header-facts-menu > summary::-webkit-details-marker { display: none; }
+.site-header .header-facts-menu > summary::after { content: '⌄'; display: inline-block; margin-left: 5px; color: #08785c; transition: transform .2s ease; }
+.site-header .header-facts-menu[open] > summary::after { transform: rotate(180deg); }
+.site-header .header-facts-menu.current > summary { color: #08785c; }
+.site-header .header-facts-menu.current > summary::before { position: absolute; right: 0; bottom: -9px; left: 0; height: 2px; background: #d8bd3f; content: ''; }
+.site-header .header-dropdown { position: absolute; z-index: 50; top: calc(100% + 17px); left: 50%; min-width: 210px; padding: 8px; display: grid; gap: 2px; transform: translateX(-50%); background: #f7f6f0; border: 1px solid #dce1d8; box-shadow: 0 16px 28px rgb(20 44 41 / 14%); }
+.site-header .header-facts-menu:not([open]) > .header-dropdown { display: none; }
+.site-header .header-dropdown a { display: block; padding: 11px 12px; color: #53635c; }
+.site-header .header-dropdown a.current::after { display: none; }
+.site-header .header-dropdown a:hover { background: #e9eee5; color: #08785c; }
 .site-header .auth-actions { flex: 0 0 auto; display: flex; align-items: center; gap: 10px; }
 .site-header .login-link { padding: 10px 4px; border: 0; background: transparent; color: #08785c; cursor: pointer; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .site-header .profile-button { display: none; width: 38px; height: 38px; place-items: center; border: 1px solid #dce1d8; border-radius: 50%; background: #fffefa; color: #08785c; cursor: pointer; font: 700 13px 'Manrope', sans-serif; }
@@ -32,17 +44,23 @@ main { flex: 1 0 auto; }
   .site-header .nav { gap: 14px; }
   .site-header .links { gap: 11px; }
   .site-header .links a { font-size: 10px; }
+  .site-header .header-facts-menu > summary { font-size: 10px; }
   .site-header .brand { gap: 8px; }
   .site-header .brandtext { font-size: 11px; }
 }
 @media (max-width: 820px) {
   .site-header .nav { min-height: 68px; width: min(100% - 36px, 1180px); gap: 12px; }
   .site-header .menu-toggle { display: inline-flex; align-items: center; justify-content: center; min-width: 66px; padding: 9px 12px; border: 1px solid #dce1d8; border-radius: 99px; background: #fffefa; color: #142c29; cursor: pointer; font-size: 10px; font-weight: 700; }
-  .site-header .links { display: none; position: absolute; top: calc(100% - 1px); right: 0; left: 0; z-index: 5; padding: 10px 18px 16px; flex-direction: column; align-items: stretch; gap: 0; border: 1px solid #dce1d8; border-top: 0; background: #f7f6f0; box-shadow: 0 18px 28px rgb(20 44 41 / 10%); }
+  .site-header .links { display: none; margin: 0; position: absolute; top: calc(100% - 1px); right: 0; left: 0; z-index: 5; padding: 10px 18px 16px; flex-direction: column; align-items: stretch; gap: 0; border: 1px solid #dce1d8; border-top: 0; background: #f7f6f0; box-shadow: 0 18px 28px rgb(20 44 41 / 10%); }
   .site-header .links.open { display: flex; }
   .site-header .links a { padding: 12px 2px; border-bottom: 1px solid #dce1d8; font-size: 12px; }
   .site-header .links a:last-child { border-bottom: 0; }
   .site-header .links a.current::after { display: none; }
+  .site-header .header-facts-menu { width: 100%; }
+  .site-header .header-facts-menu > summary { padding: 12px 2px; border-bottom: 1px solid #dce1d8; color: #53635c; font-size: 12px; font-weight: 600; }
+  .site-header .header-facts-menu.current > summary::before { display: none; }
+  .site-header .header-dropdown { position: static; min-width: 0; padding: 3px 0 5px 14px; transform: none; border: 0; background: transparent; box-shadow: none; }
+  .site-header .header-dropdown a { padding: 10px 2px; font-size: 11px; }
   .site-header .auth-actions { margin-left: auto; gap: 7px; }
   .site-header .login-link { font-size: 9px; letter-spacing: .04em; }
   .site-header .profile-button { width: 34px; height: 34px; }

@@ -12,10 +12,15 @@
   ];
 
   if (script.dataset.part === 'header') {
-    const links = navigation.map(([href, key, label]) => {
+    const makeLink = ([href, key, label]) => {
       const active = page === href;
       return `<a href="${href}" data-t="${key}"${active ? ' class="current" aria-current="page"' : ''}>${label}</a>`;
-    }).join('');
+    };
+    const factsLink = makeLink(navigation[0]);
+    const aboutLink = makeLink(navigation[5]);
+    const factSheetItems = navigation.slice(1, 5);
+    const factSheetActive = factSheetItems.some(([href]) => page === href);
+    const factSheetLinks = factSheetItems.map(makeLink).join('');
     script.insertAdjacentHTML('beforebegin', `
       <header class="site-header"><div class="wrap nav">
         <a href="index.html#accueil" class="brand" aria-label="Accueil">
@@ -23,7 +28,14 @@
           <span class="brandtext" data-t="brand">Brésil<small>Ambassade du Brésil</small></span>
         </a>
         <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
-        <nav class="links" id="mainNav" aria-label="Navigation">${links}</nav>
+        <nav class="links" id="mainNav" aria-label="Navigation">
+          ${factsLink}
+          <details class="header-facts-menu${factSheetActive ? ' current' : ''}">
+            <summary data-shell-fact-sheets>Fiches pays</summary>
+            <div class="header-dropdown">${factSheetLinks}</div>
+          </details>
+          ${aboutLink}
+        </nav>
         <div class="auth-actions">
           <button class="login-link" id="loginOpen" type="button" data-t="login">Connexion</button>
           <button class="profile-button" id="profileOpen" type="button" aria-label="Profil" title="Profil">C</button>
@@ -42,8 +54,19 @@
       nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
         nav.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
+        nav.querySelector('.header-facts-menu')?.removeAttribute('open');
       }));
     }
+    const factSheetsLabel = document.querySelector('[data-shell-fact-sheets]');
+    const updateFactSheetsLabel = () => {
+      const lang = document.documentElement.lang || 'fr';
+      factSheetsLabel.textContent = lang === 'en' ? 'Fact sheets' : lang === 'pt' ? 'Fichas informativas' : 'Fiches pays';
+    };
+    updateFactSheetsLabel();
+    new MutationObserver(updateFactSheetsLabel).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+    document.addEventListener('click', event => {
+      if (!event.target.closest('.header-facts-menu')) document.querySelector('.header-facts-menu')?.removeAttribute('open');
+    });
   } else if (script.dataset.part === 'footer') {
     const leftKey = page === 'brezil_vs_canada.html' ? 'foot' : 'footerLeft';
     const leftText = page === 'index.html'
