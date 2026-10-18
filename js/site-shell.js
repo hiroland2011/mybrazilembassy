@@ -45,19 +45,17 @@
       }));
     }
   } else if (script.dataset.part === 'footer') {
-    const welcome = page === 'index.html';
     const leftKey = page === 'brezil_vs_canada.html' ? 'foot' : 'footerLeft';
-    const leftText = welcome
-      ? 'BIENVENUE AU BRÉSIL · WELCOME TO BRAZIL · BEM-VINDO AO BRASIL'
+    const leftText = page === 'index.html'
+      ? 'BRÉSIL · CANADA — DOSSIER DIPLOMATIQUE'
       : page === 'brezil_vs_canada.html'
         ? 'BRÉSIL — CANADA · DOSSIER DIPLOMATIQUE'
         : page === 'information_sur_le_pays.html'
           ? 'BRÉSIL · DOSSIER DIPLOMATIQUE'
           : 'BRÉSIL · CANADA — DOSSIER DIPLOMATIQUE';
-    const rightText = welcome ? 'BRÉSIL · BRAZIL · BRASIL'
-      : page === 'information_sur_le_pays.html' ? '2026–2027' : 'OTTAWA · 2026–2027';
+    const rightText = page === 'information_sur_le_pays.html' ? '2026–2027' : 'OTTAWA · 2026–2027';
     script.insertAdjacentHTML('beforebegin', `
-      <footer class="site-footer${welcome ? ' welcome-footer' : ''}">
+      <footer class="site-footer">
         <div class="wrap footer-inner"><span data-t="${leftKey}">${leftText}</span><span>${rightText}</span></div>
       </footer>`);
   }

@@ -1,4 +1,11 @@
 /* Shared header and footer, loaded after each page's local styles. */
+/* Keep the footer at the viewport edge on short pages, in normal flow on long pages. */
+html { min-height: 100%; }
+body { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+.topline { flex: 0 0 5px; }
+.site-header { flex: 0 0 auto; }
+main { flex: 1 0 auto; }
+.site-footer { flex: 0 0 auto; margin-top: auto; }
 .site-header { position: sticky; top: 0; z-index: 40; background: rgb(245 244 239 / 96%); border-bottom: 1px solid rgb(20 44 41 / 10%); backdrop-filter: blur(16px); }
 .site-header .nav { position: relative; width: min(1180px, calc(100% - 48px)); min-height: 78px; height: auto; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
 .site-header .brand { flex: 0 0 auto; display: flex; align-items: center; gap: 12px; text-decoration: none; }
