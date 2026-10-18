@@ -2,13 +2,21 @@
 (() => {
   const script = document.currentScript;
   const page = location.pathname.split('/').pop() || 'index.html';
+  const savedLanguage = localStorage.getItem('embassyDemoLanguage');
+  const language = ['en', 'pt'].includes(savedLanguage) ? savedLanguage : 'fr';
+  const labels = {
+    fr: { brand: 'Brésil<small>Ambassade du Brésil</small>', facts: 'Repères', compare: 'Comparaison', issues: 'Enjeux 2026–27', history: 'Histoire', leader: 'Chef d’État', about: 'À propos', factSheets: 'Fiches pays', login: 'Connexion', menu: 'Menu' },
+    en: { brand: 'Brazil<small>Embassy of Brazil</small>', facts: 'At a glance', compare: 'Compare', issues: 'Issues 2026–27', history: 'History', leader: 'Head of State', about: 'About us', factSheets: 'Fact sheets', login: 'Sign in', menu: 'Menu' },
+    pt: { brand: 'Brasil<small>Embaixada do Brasil</small>', facts: 'Em resumo', compare: 'Comparação', issues: 'Desafios 2026–27', history: 'História', leader: 'Chefe de Estado', about: 'Sobre nós', factSheets: 'Fichas informativas', login: 'Entrar', menu: 'Menu' }
+  }[language];
+  document.documentElement.lang = language;
   const navigation = [
-    ['information_sur_le_pays.html', 'navFacts', 'Repères'],
-    ['brezil_vs_canada.html', 'navCompare', 'Comparaison'],
-    ['enjeux_a_suivre.html', 'navIssues', 'Enjeux 2026–27'],
-    ['histoire_contemporaine.html', 'navHistory', 'Histoire'],
-    ['fiche_sur_le_chef.html', 'navLeader', 'Chef d’État'],
-    ['a_propos.html', 'navAbout', 'À propos']
+    ['information_sur_le_pays.html', 'navFacts', labels.facts],
+    ['brezil_vs_canada.html', 'navCompare', labels.compare],
+    ['enjeux_a_suivre.html', 'navIssues', labels.issues],
+    ['histoire_contemporaine.html', 'navHistory', labels.history],
+    ['fiche_sur_le_chef.html', 'navLeader', labels.leader],
+    ['a_propos.html', 'navAbout', labels.about]
   ];
 
   if (script.dataset.part === 'header') {
@@ -25,21 +33,21 @@
       <header class="site-header"><div class="wrap nav">
         <a href="index.html#accueil" class="brand" aria-label="Accueil">
           <img class="brandmark" src="img/icon/brazil-150403_1280.png" alt="" aria-hidden="true">
-          <span class="brandtext" data-t="brand">Brésil<small>Ambassade du Brésil</small></span>
+          <span class="brandtext" data-t="brand">${labels.brand}</span>
         </a>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav">Menu</button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav">${labels.menu}</button>
         <nav class="links" id="mainNav" aria-label="Navigation">
           ${factsLink}
           <details class="header-facts-menu${factSheetActive ? ' current' : ''}">
-            <summary data-shell-fact-sheets>Fiches pays</summary>
+            <summary data-shell-fact-sheets>${labels.factSheets}</summary>
             <div class="header-dropdown">${factSheetLinks}</div>
           </details>
           ${aboutLink}
         </nav>
         <div class="auth-actions">
-          <button class="login-link" id="loginOpen" type="button" data-t="login">Connexion</button>
+          <button class="login-link" id="loginOpen" type="button" data-t="login">${labels.login}</button>
           <button class="profile-button" id="profileOpen" type="button" aria-label="Profil" title="Profil">C</button>
-          <button class="lang" id="lang" type="button" aria-label="Changer de langue">FR⌄</button>
+          <button class="lang" id="lang" type="button" aria-label="Changer de langue">${language.toUpperCase()}⌄</button>
         </div>
       </div></header>`);
 
