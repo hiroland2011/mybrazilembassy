@@ -5,10 +5,10 @@ html { min-height: 100%; scrollbar-gutter: stable; }
 @view-transition { navigation: auto; }
 .site-header { view-transition-name: site-header; }
 .site-footer { view-transition-name: site-footer; }
-::view-transition-old(root) { animation: 280ms cubic-bezier(.4, 0, 1, 1) both page-fade-out; }
-::view-transition-new(root) { animation: 360ms cubic-bezier(.16, 1, .3, 1) both page-fade-in; }
+::view-transition-old(root) { animation: 320ms cubic-bezier(.4, 0, 1, 1) both page-fade-out; }
+::view-transition-new(root) { animation: 420ms cubic-bezier(.16, 1, .3, 1) both page-fade-in; }
 ::view-transition-group(site-header),
-::view-transition-group(site-footer) { animation-duration: 300ms; }
+::view-transition-group(site-footer) { animation-duration: 360ms; }
 @keyframes page-fade-out { to { opacity: 0; } }
 @keyframes page-fade-in { from { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) {
@@ -21,6 +21,8 @@ body { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: col
 .topline { flex: 0 0 5px; }
 .site-header { flex: 0 0 auto; }
 main { flex: 1 0 auto; position: relative; isolation: isolate; }
+.site-header .reading-progress { position: absolute; right: 0; bottom: -1px; left: 0; height: 2px; overflow: hidden; pointer-events: none; }
+.site-header .reading-progress span { display: block; width: 100%; height: 100%; transform: scaleX(0); transform-origin: left center; background: linear-gradient(90deg, #08785c 0 70%, #e8c547 70% 95%, #d95649 95%); }
 /* A quiet Brazilian color glow and abstract topographic contour lines. */
 main::before,
 main::after { content: ''; position: absolute; z-index: -1; pointer-events: none; }
@@ -151,8 +153,8 @@ main::after {
 main .team-avatar,
 main .project-team-photo,
 main .history-images img,
-main .issue-images img,
-main .city-preview img { transition: transform 650ms cubic-bezier(.2, .7, .25, 1), filter 400ms ease, opacity 480ms cubic-bezier(.22, .7, .2, 1); }
+main .issue-images img { transition: transform 240ms cubic-bezier(.2, .7, .25, 1), filter 220ms ease; }
+main .city-preview img { transition: transform 650ms cubic-bezier(.22, .7, .2, 1), filter 220ms ease, opacity 480ms cubic-bezier(.22, .7, .2, 1); }
 main .history-images img { border-radius: 8px; }
 main .issue-images figure { border-radius: 9px; }
 main .city-preview img { transform: scale(1.045); }

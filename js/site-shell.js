@@ -49,7 +49,7 @@
           <button class="profile-button" id="profileOpen" type="button" aria-label="Profil" title="Profil">C</button>
           <button class="lang" id="lang" type="button" aria-label="Changer de langue">${language.toUpperCase()}⌄</button>
         </div>
-      </div></header>`);
+      </div><div class="reading-progress" aria-hidden="true"><span></span></div></header>`);
 
     // The comparison page already wires a translated menu handler of its own.
     if (page !== 'brezil_vs_canada.html') {
@@ -76,6 +76,25 @@
       if (!event.target.closest('.header-facts-menu')) document.querySelector('.header-facts-menu')?.removeAttribute('open');
     });
     const initializeReveal = () => {
+      const progress = document.querySelector('.reading-progress span');
+      if (progress) {
+        let queued = false;
+        const updateProgress = () => {
+          queued = false;
+          const range = document.documentElement.scrollHeight - window.innerHeight;
+          const fraction = range > 0 ? Math.min(1, Math.max(0, window.scrollY / range)) : 0;
+          progress.style.transform = `scaleX(${fraction})`;
+        };
+        const queueProgress = () => {
+          if (queued) return;
+          queued = true;
+          requestAnimationFrame(updateProgress);
+        };
+        window.addEventListener('scroll', queueProgress, { passive: true });
+        window.addEventListener('resize', queueProgress, { passive: true });
+        window.addEventListener('pageshow', queueProgress);
+        updateProgress();
+      }
       if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       const items = document.querySelectorAll('main h1, main .section-head, main .panel, main .team-card, main .service-card, main .metric-card, main .chart-card, main .cities-card, main .language-card, main .population-card, main .profile-card');
       if (!('IntersectionObserver' in window)) {
