@@ -122,3 +122,35 @@ main { flex: 1 0 auto; }
 @media (prefers-reduced-motion: reduce) {
   .reveal-item { opacity: 1; transform: none; transition: none; }
 }
+
+/* Subtle photo motion: gentle crop, light and color changes keep images lively. */
+main .team-avatar,
+main .project-team-photo,
+main .history-images img,
+main .issue-images img,
+main .city-preview img { transition: transform 650ms cubic-bezier(.2, .7, .25, 1), filter 400ms ease, opacity 480ms cubic-bezier(.22, .7, .2, 1); }
+main .history-images img { border-radius: 8px; }
+main .issue-images figure { border-radius: 9px; }
+main .city-preview img { transform: scale(1.045); }
+main .city-preview img.current { transform: scale(1); }
+@media (hover: hover) and (pointer: fine) {
+  main .team-card:hover .team-avatar { transform: scale(1.04); filter: brightness(1.04) saturate(1.05); }
+  main .project-team-photo:hover { filter: brightness(1.06) saturate(1.06); }
+  main .history-images img:hover { filter: brightness(1.08) saturate(1.08); }
+  main .issue-images figure:hover img { transform: scale(1.045); filter: brightness(1.04) saturate(1.08); }
+}
+@media (prefers-reduced-motion: reduce) {
+  main .team-avatar,
+  main .project-team-photo,
+  main .history-images img,
+  main .issue-images img,
+  main .city-preview img { transition: none !important; }
+  main .city-preview img,
+  main .city-preview img.current,
+  main .team-card:hover .team-avatar,
+  main .issue-images figure:hover img { transform: none; }
+  main .team-card:hover .team-avatar,
+  main .project-team-photo:hover,
+  main .history-images img:hover,
+  main .issue-images figure:hover img { filter: none; }
+}
