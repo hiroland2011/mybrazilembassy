@@ -75,6 +75,28 @@
     document.addEventListener('click', event => {
       if (!event.target.closest('.header-facts-menu')) document.querySelector('.header-facts-menu')?.removeAttribute('open');
     });
+    const initializeReveal = () => {
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const items = document.querySelectorAll('main h1, main .section-head, main .panel, main .team-card, main .service-card, main .metric-card, main .chart-card, main .cities-card, main .language-card, main .population-card, main .profile-card');
+      if (!('IntersectionObserver' in window)) {
+        items.forEach(item => item.classList.add('reveal-item', 'is-visible'));
+        return;
+      }
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -24px 0px' });
+      items.forEach(item => {
+        item.classList.add('reveal-item');
+        observer.observe(item);
+      });
+    };
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initializeReveal, { once: true });
+    else initializeReveal();
   } else if (script.dataset.part === 'footer') {
     const leftKey = page === 'brezil_vs_canada.html' ? 'foot' : 'footerLeft';
     const leftText = page === 'index.html'

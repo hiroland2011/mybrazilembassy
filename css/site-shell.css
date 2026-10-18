@@ -93,3 +93,32 @@ main { flex: 1 0 auto; }
   .site-header .login-link { padding-inline: 2px; font-size: 8px; }
   .site-footer .footer-inner { min-height: 58px; font-size: 8px; }
 }
+
+/* Quiet entrance motion for headings and content cards. */
+.reveal-item { opacity: 0; transform: translateY(14px); transition: opacity 520ms cubic-bezier(.2, .7, .25, 1), transform 520ms cubic-bezier(.2, .7, .25, 1); }
+.reveal-item.is-visible { opacity: 1; transform: translateY(0); }
+@media (hover: hover) and (pointer: fine) {
+  main .team-card,
+  main .service-card,
+  main .metric-card,
+  main .chart-card,
+  main .cities-card,
+  main .language-card,
+  main .population-card,
+  main .profile-card,
+  main .contact-card,
+  main .panel { transition: transform 240ms cubic-bezier(.2, .7, .25, 1), box-shadow 240ms ease, border-color 240ms ease; }
+  main .team-card:hover,
+  main .service-card:hover,
+  main .metric-card:hover,
+  main .chart-card:hover,
+  main .cities-card:hover,
+  main .language-card:hover,
+  main .population-card:hover,
+  main .profile-card:hover,
+  main .contact-card:hover,
+  main .panel:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgb(24 59 48 / 10%); border-color: #b8cbbd; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-item { opacity: 1; transform: none; transition: none; }
+}
