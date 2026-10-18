@@ -1,6 +1,22 @@
 /* Shared header and footer, loaded after each page's local styles. */
 /* Keep the footer at the viewport edge on short pages, in normal flow on long pages. */
 html { min-height: 100%; scrollbar-gutter: stable; }
+/* Native cross-document transitions preserve the multi-page structure. */
+@view-transition { navigation: auto; }
+.site-header { view-transition-name: site-header; }
+.site-footer { view-transition-name: site-footer; }
+::view-transition-old(root) { animation: 280ms cubic-bezier(.4, 0, 1, 1) both page-fade-out; }
+::view-transition-new(root) { animation: 360ms cubic-bezier(.16, 1, .3, 1) both page-fade-in; }
+::view-transition-group(site-header),
+::view-transition-group(site-footer) { animation-duration: 300ms; }
+@keyframes page-fade-out { to { opacity: 0; } }
+@keyframes page-fade-in { from { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) { animation-duration: .01ms !important; }
+}
+
 body { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
 .topline { flex: 0 0 5px; }
 .site-header { flex: 0 0 auto; }
