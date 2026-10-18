@@ -1,82 +1,83 @@
 # 20 Événements Clés de l'Histoire du Brésil
 
-### 1. 1500 — Arrivée de Pedro Álvares Cabral
-L'explorateur portugais Pedro Álvares Cabral arrive sur la côte de l'actuel État de Bahia, revendiquant le territoire pour la Couronne portugaise. Initialement nommée *Terra de Santa Cruz*, la région prendra plus tard le nom de Brésil en raison du précieux bois de brésil (*pau-brasil*) extrait le long des côtes.
+
+### 1. 1950 — Retour de Getulio Vargas à la présidence
+De 1930 à 1945, Getulio Vargas est président du Brésil représentant le parti des ouvriers mais en 1945, il est renversé par les militaires. Il est réélu en tant que sénateur du Rio Grande do Sul, mais ne revient pas à la politique jusqu'en 1950, quand il redevient président grâce au soutien du Parti des travailleurs. Se laissant emporter par la corruption et des campagnes de la droite, il se suicide en 1954.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 2. 1532 — Fondation de São Vicente
-Martim Afonso de Sousa fonde São Vicente, dans l'actuel État de São Paulo, marquant ainsi la première colonie permanente portugaise au Brésil. Cet événement établit le système des capitaineries héréditaires, posant les bases administratives et institutionnelles de la colonisation portugaise et de la production sucrière.
+### 2. 1954 — Bataille de Berne
+En 1954, en quart de finale, l’équipe de Brésil joue contre celle de la Hongrie plus violemment que normalement à cause de leur rivalité. Deux joueurs ont été expulsés durant le match, et à la fin de la partie, une grosse bataille entre les supporteurs des deux équipes éclate où plusieurs terminent blessées.
+- [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
+- [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
+### 3. 1958 — Première victoire de la coupe du monde
+Depuis leur première coupe du monde en 1930, la première victoire de l’équipe brésilienne masculine de football était en 1958, en Suède. Le joueur marquant du tournoi était Edson Arantes do Nascimento, aussi connu sous le nom de Pelé: quoiqu'il n'avait que 17 ans et était blessé, il a totalement dominé le jeu et les foules. Le football a été immédiatement associé à la culture brésilienne. 
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 3. 1549 — Création du Gouvernement Général et de Salvador
-Le roi Jean III de Portugal centralise l'administration coloniale en nommant Tomé de Sousa premier gouverneur général du Brésil. De Sousa établit Salvador da Bahia comme première capitale de la colonie, amenant avec lui des missionnaires jésuites pour convertir les populations autochtones et organiser la gouvernance impériale.
+### 4. 1960 — Inauguration de Brasilia
+Juscelino Kubitschek met en place un projet pour créer une nouvelle capitale, Brasília, pour mieux répartir les activités économiques, les richesses et la population. Le projet mettrait également fin à la rivalité entre São Paulo et Rio de Janeiro. La ville a été presque complètement planifiée du départ et est un exemple, encore aujourd'hui, d'une planification urbaine à grande échelle.
+- [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
+- [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
+### 5. 1964 — Début de la dictature militaire
+João Goulart, un ex-président brésilien, était accusé d’être un communiste par plusieurs, dont la population, l’Église très influente et même la presse américaine. Lors du coup d'État le 1er avril, l’armée rencontre très peu de résistance en raison de la population habituée à voir les militaires gérer l’État. Sous le régime de dictature, il y a eu beaucoup de censure et des milliers de citoyens ont été emprisonnés, torturés et même tués.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 4. 1654 — Expulsion des Hollandais du Pernambouc
-Après des décennies d'occupation par la Compagnie néerlandaise des Indes occidentales dans le Nord-Est brésilien (Nouvelle-Hollande), une coalition de colons portugais, de combattants autochtones et de troupes afro-brésiliennes défait les forces néerlandaises lors des batailles des Guararapes, sécurisant la souveraineté territoriale portugaise.
+### 6. 1970 — Le lancement du projet de la route transamazonienne
+Le projet de la route transamazonienne, lancé par le président Emilio Médici en 1970, avait pour but de relier l’Amazonie à plusieurs régions du Brésil. Le projet a réussi d’attirer la population brésilienne vers l’Amazonie. Cependant, cette construction suscite des inquiétudes chez plusieurs, puisqu’elle cause la destruction de la forêt amazonienne, une forêt qui joue un très grand rôle dans l’absorption des GES.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 5. 1695 — Mort de Zumbi dos Palmares
-Zumbi, chef du Quilombo dos Palmares — la plus grande communauté autonome d'Africains réduits en esclavage et évadés au Brésil —, est capturé et exécuté par les forces coloniales. Son héritage en fait un symbole national durable de la résistance afro-brésilienne, de la liberté et de la lutte contre l'esclavage.
+### 7. 1976 — Assassinat de Juscelino Kubitschek
+La version officielle du décès de l'ex président, opposant de la dictature, Juscelino Kubitschek est un accident de voiture. Toutefois, beaucoup de personnes le croyaient assassiné par la dictature. La commission de Sao Paulo conclue, en 2013, qu'avec plusieurs éléments de preuves, que la mort de Kubitschek était un assassinat, ce qui a été réfuté en 2014.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 6. 1789 — La Conjuration Minière (Inconfidência Mineira)
-Une conspiration anticoloniale dirigée par Joaquim José da Silva Xavier (« Tiradentes ») émerge dans le Minas Gerais, inspirée par les idéaux des Lumières et la Révolution américaine. Bien que la Couronne écrase la révolte et exécute Tiradentes, l'événement marque une étape fondamentale vers l'indépendance du Brésil.
+### 8. 1983-84 — Mouvement «Diretas jà»
+En 1983, pendant la dictature, la population brésilienne se tanne du régime militaire, à cause d'un ralentissement économique et aucun suffrage direct pour le président, ils souhaitent ajouter un amendement dans la constitution pour cela. Des manifestations ayant le slogan «Diretas jà» (élections directes) se produisent pour améliorer les conditions de vie de la population et pour avoir le choix direct du président par le vote. 
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 7. 1808 — Arrivée de la Famille Royale Portugaise
-Fuyant les armées napoléoniennes, le prince régent Jean (futur roi Jean VI) et la cour portugaise s'installent à Rio de Janeiro. Cet événement transforme Rio en siège de l'Empire portugais, ouvre les ports brésiliens aux nations amies et élève considérablement le statut politique du Brésil à l'échelle internationale.
+### 9. 1985 — Fin de la dictature militaire
+En 1979, la loi d’amnistie est mise en place qui permet l'annulation des accusations contre les autorités de la dictature et de la répression ainsi que contre les opposants de celles-ci. Le multipartisme est également permis en 1979, ce qui permet une transition à un système démocratique. Le premier vrai président démocratique après 1985 est José Sarney, puisque Tancredo Neves, celui qui était supposé être président, meurt avant son entrée en fonction.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 8. 1822 — Déclaration d'Indépendance du Brésil
-Le 7 septembre, le prince Pedro proclame l'indépendance du Brésil vis-à-vis du Portugal le long de la rivière Ipiranga, lançant le célèbre cri « L'indépendance ou la mort ! ». Couronné empereur sous le nom de Pedro Ier, il établit l'Empire du Brésil en tant que monarchie constitutionnelle.
+### 10. 1992 — Mouvement Caras-pintadas
+Fernando Collor de Mello, le premier président élu post-dictature, est accusé de corruption avec des instances documentées d'évasion fiscale, et de paiements illégaux des compagnies de construction. Cela provoque un mouvement étudiant, Caras-pintadas, où ils se sont peint le visage avec les couleurs du Brésil. Cela fut assez influent pour provoquer une démarche de destitution du président entamée par le sénat.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 9. 1831 — Abdication de l'Empereur Pedro Ier
-Confronté à une opposition politique croissante, à l'instabilité économique et à des troubles dynastiques au Portugal, Pedro Ier abdique le trône brésilien en faveur de son fils de cinq ans, Pedro II. Cet acte inaugure la tumultueuse période de la Régence, marquée par de nombreuses rébellions régionales.
+### 11. Octobre 1992 — Massacre de Carandiru
+Le 2 octobre 1992, une altercation lors d'un transfert de prisonnier se produit dans un centre de détention considérablement surpeuplé, appelé Carandiru, situé dans l'état de Sao Paulo. Le gouverneur, Luìs Antônio Fleury F., est réputé avoir empêché les négociations avec les mutinés et d'avoir donné l'ordre d'envahir la prison par force.  La police militaire, sous les ordres du colonel Ubiratan Guimarães, a mitraillé les prisonniers, résultant en la mort de 102 prisonniers.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 10. 1864–1870 — La Guerre du Paraguay
-Le Brésil, l'Argentine et l'Uruguay forment la Triple-Alliance pour vaincre le dictateur paraguayen Francisco Solano López dans le conflit militaire le plus meurtrier d'Amérique du Sud. La victoire élargit les frontières du Brésil mais cause d'immenses pertes humaines et renforce le pouvoir politique des militaires.
+### 12. 1994 — Lancement du plan Real
+Pour ralentir le taux de l’inflation, Fernando Henrique Cardoso, le ministre de finances en 1994, a mis en place une nouvelle monnaie, le real, qui baisse le taux d’inflation de 5000% à moins de 10% par année, mais sans affecter la croissance de l’économie. Ce projet a également baissé le nombre de Brésiliens qui vivent en situation de pauvreté de 33% à 25% en deux ans. Il est ensuite devenu président du Brésil aux prochaines élections pour deux mandats consécutifs.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 11. 1888 — Abolition de l'Esclavage (Loi d'Or)
-La princesse Isabelle signe la *Lei Áurea* (Loi d'Or) le 13 mai, abolissant sans condition l'esclavage au Brésil. Dernier pays de l'hémisphère occidental à abolir l'esclavage, cet événement remanie profondément les structures sociales du pays et accélère la chute de la monarchie.
+### 13. 1995 — Création de l’OTCA
+L’OTCA est une organisation qui a pour but de préserver l’Amazonie et ses richesses en la défendant de problèmes environnementaux causés surtout par le changement climatique et la déforestation du «poumon de la Terre». L’organisation regroupe plusieurs pays en plus du Brésil qui ont en leur territoire une partie de l’Amazonie: la Bolivie, la Colombie, l’Équateur, le Guyana, le Pérou, le Suriname et le Vénézuela.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 12. 1889 — Proclamation de la République
-Le maréchal Deodoro da Fonseca mène un coup d'État militaire qui dépose l'empereur Pedro II, mettant fin à l'Empire du Brésil et établissant les États-Unis du Brésil. La famille royale est exilée, faisant passer le pays à un régime républicain fédéral dominé par les élites oligarques agricoles.
+### 14. 1930 — Premier mandat du PT en 50 ans
+Avec le Parti des Travailleurs, Lula met en place des programmes sociaux pour contrer la pauvreté ainsi que la famine, dont Fome Zero et Bolsa Familia qui améliorent la situation économique du pays comparé aux années précédentes. Il travaille sur des problèmes internationaux comme être élu au Conseil de sécurité de l’ONU.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 13. 1930 — La Révolution de 1930
-Getúlio Vargas dirige une révolution armée qui renverse le président Washington Luís et empêche l'investiture de Júlio Prestes, mettant fin à l'oligarchie du « café au lait ». Vargas prend le pouvoir, centralise l'autorité de l'État, industrialise l'économie et instaure plus tard le régime autoritaire de l'*Estado Novo*.
+### 15. 2009 — Création de BRIC
+En 2009, le BRIC est créé, avec le Brésil étant un membre puisqu’il est la plus grande puissance économique en Amérique du Sud et à cause de son statut comme pays en voie de développement. Pendant quelques années après avoir rejoint ce groupe, le PIB du Brésil est en forte croissance, jusqu’à 8% en 2011. Le BRICS est encore, de nos jours, une alliance importante qui a plusieurs projets planifiés.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 14. 1960 — Inauguration de Brasília
-Le président Juscelino Kubitschek inaugure officiellement Brasília comme nouvelle capitale fédérale, transférant le gouvernement depuis Rio de Janeiro. Conçue par Oscar Niemeyer et Lúcio Costa, la ville moderniste vise à développer l'intérieur des terres et à symboliser la modernisation du pays.
+### 16. 2014 — Coupe du monde au Brésil
+La 20e édition de la coupe du monde, remportée par l’Argentine, a été organisée au Brésil, du 12 juin au 13 juillet 2014, avec la finale se déroulant à Rio de Janeiro. C'était un évènement très important pour le Brésil, car c'est le football prend une grande place dans la culture brésilienne, toutefois, le Brésil ne gagne pas le tournoi. 
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 15. 1964 — Coup d'État Militaire
-Les forces armées brésiliennes, soutenues par des groupes civils conservateurs, renversent le président démocrate João Goulart. Cela instaure une dictature militaire autoritaire qui durera jusqu'en 1985, caractérisée par la censure politique, des violations des droits humains et la répression de l'opposition.
+### 17. 2016 — Jeux olympiques à Rio de Janeiro
+Le Brésil, qui a accueilli les Jeux olympiques de 2016 à Rio de Janeiro, est accusé de ne pas avoir respecté les droits humains des habitants des favelas, les bidonvilles du Brésil. Effectivement, plusieurs ONG prônant la protection des droits humains, comme Amnesty International, accusent les forces armées et la police brésilienne d'utiliser la force illégitimement. 
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 16. 1984 — Le Mouvement *Diretas Já*
-Des millions de Brésiliens descendent dans les rues des grandes villes lors d'un vaste mouvement civique exigeant le retour immédiat des élections présidentielles directes. Bien que l'amendement constitutionnel échoue dans un premier temps, la mobilisation accélère la fin de la dictature et la redémocratisation.
+### 18. 2018 — Incarcération de Lula
+Le 7 avril, Lula est incarcéré suite à la défaite d'un appel en cours par le juge Moro, après une inculpation pour avoir accepté une propriété de la part de Petrobras en échange de faveurs politiques. En 2019, il est libéré après que la cour suprême ait conclu que Moro était en collusion avec le procureur pour assurer son emprisonnement et empêcher sa candidature aux élections de 2018. Après l'investiture de Bolsonaro, Moro est nommé ministre de la justice.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 17. 1988 — Promulgation de la Constitution Citoyenne
-Le Brésil promulgue une nouvelle Constitution démocratique, surnommée la « Constitution Citoyenne ». Elle restaure les libertés civiles, garantit les droits individuels, crée le Système de Santé Unifié (SUS), reconnaît les terres autochtones et pose les fondations de la démocratie brésilienne moderne.
+### 19. 2024 — Inondations à Rio Grande do Sul
+Du 26 avril au 2 mai, dans l'État de Rio Grande do Sul, au sud du Brésil, des pluies torrentielles, causées par un El Nino, envahissent la région et engendrent de massives inondations où la  rivière Guaíba atteint un record de 5,3 mètres d'hauteur. 107 personnes sont déclarées mortes, 136 personnes disparues, 374 blessées  et 150 000 personnes évacuées, de plus, plus de 1,47 millions de personnes ont été affectées.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 18. 1994 — Lancement du Plano Real
-Le ministre des Finances Fernando Henrique Cardoso lance le *Plano Real*, un programme global de stabilisation économique qui introduit le Real (BRL). Le plan met fin avec succès à l'hyperinflation qui ravageait le Brésil depuis des décennies, jetant les bases d'une stabilité économique durable.
-* [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
-* [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 19. 2014 — Lancement de l'Opération Lavage Express (*Lava Jato*)
-Les procureurs fédéraux lancent une vaste enquête contre le blanchiment d'argent, visant la compagnie pétrolière d'État Petrobras et de grands groupes de BTP. Cette enquête met en cause des dizaines d'hommes politiques et d'hommes d'affaires, bouleversant le paysage politique brésilien.
-* [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
-* [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 20. 2016 — Destitution de la Présidente Dilma Rousseff
-Le Sénat brésilien vote la destitution de Dilma Rousseff, première femme présidente du pays, en raison d'accusations de violations des lois budgétaires (*pedaladas fiscais*). Ce procès en destitution controversé met fin à 13 ans de gouvernement du Parti des Travailleurs (PT) et accentue la polarisation politique.
+### 20. 2025 — Emprisonnement de Bolsonaro
+Bolsonaro fait une tentative de coup d'État auprès de Lula, son opposant, et est déclaré coupable, en septembre, d'avoir été le chef d'une organisation criminelle, où il complote pour préserver son pouvoir après la victoire de Lula en 2022. Il est condamné pour 27 ans. Trump décide de mettre des surtaxes sur le Brésil dans le but d'assurer le pardon de Bolsonaro.
 * [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 * [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
