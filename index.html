@@ -26,6 +26,8 @@
     .welcome-inner{width:min(100%,920px);display:flex;justify-content:center;align-items:center;padding-top:60px;padding-bottom:60px}
     .welcome-copy{width:100%;max-width:820px;position:relative;z-index:2;padding:20px 0;text-align:center;transform:translateX(-36px)}
     .welcome-copy:before{content:'';position:absolute;z-index:-1;top:-40px;bottom:-40px;left:calc(50% + 36px);width:100vw;transform:translateX(-50%);background:url('img/city/Rio-de-Janeiro.jpg') center 48%/cover no-repeat;opacity:.65;pointer-events:none}
+    .welcome-copy:after{content:'';position:absolute;z-index:-1;top:-40px;bottom:-40px;left:calc(50% + 36px);width:100vw;transform:translateX(-50%);pointer-events:none;background:linear-gradient(90deg,transparent 0%,rgba(16,37,59,.76) 14%,rgba(27,49,71,.48) 30%,rgba(0,0,0,.08) 43%,rgba(255,255,255,.24) 50%,rgba(0,0,0,.08) 57%,rgba(27,49,71,.48) 70%,rgba(16,37,59,.76) 86%,transparent 100%);background-size:150% 100%;background-position:100% 50%;background-repeat:no-repeat;mix-blend-mode:soft-light;opacity:.82;animation:welcome-light-sweep 28s ease-in-out infinite alternate}
+    @keyframes welcome-light-sweep{from{background-position:100% 50%}to{background-position:0% 50%}}
     .welcome-copy .eyebrow{justify-content:center;color:#075c43;font-size:10px;text-shadow:0 1px 8px #f5f4ef}
     .welcome-copy .eyebrow:before{display:none}
     .welcome-copy h1{font-size:clamp(68px,10vw,124px);line-height:.98;letter-spacing:-.085em;max-width:none;color:#10231f;margin:25px auto 22px;text-shadow:0 1px 10px #f5f4ef,0 0 24px #f5f4efcc}
@@ -40,7 +42,7 @@
     .welcome-shapes .shape-arc{width:220px;height:220px;right:10%;bottom:-145px;border:1px solid #08785c2d;border-radius:50%;box-shadow:0 0 0 18px #08785c08,0 0 0 38px #08785c06}
     @keyframes shape-drift{0%,100%{translate:0 0}50%{translate:0 -10px}}
         @media(max-width:850px){.welcome-shapes .shape-ring{left:6%;top:16%;width:88px;height:88px}.welcome-shapes .shape-arc{right:-10%}}
-    @media(max-width:650px){.welcome-hero{min-height:calc(100svh - 131px);min-height:max(500px,calc(100svh - 131px))}.welcome-inner{padding-top:44px;padding-bottom:44px}.welcome-copy{padding:0;transform:translateX(-10px)}.welcome-copy:before{left:calc(50% + 10px)}.welcome-copy .eyebrow{font-size:8px;letter-spacing:.16em}.welcome-copy h1{font-size:clamp(62px,15vw,82px);margin:22px auto 18px}.welcome-copy .intro{font-size:13px;max-width:330px}.welcome-trilingual{margin:23px 0 26px;gap:8px 11px;font-size:8px}.welcome-trilingual span+span:before{margin-right:11px}.welcome-shapes .shape-ring{width:60px;height:60px;left:5%;top:13%}.welcome-shapes .shape-arc{width:130px;height:130px;right:-42px;bottom:-86px}}
+    @media(max-width:650px){.welcome-hero{min-height:calc(100svh - 131px);min-height:max(500px,calc(100svh - 131px))}.welcome-inner{padding-top:44px;padding-bottom:44px}.welcome-copy{padding:0;transform:translateX(-10px)}.welcome-copy:before{left:calc(50% + 10px)}.welcome-copy:after{left:calc(50% + 10px);width:100vw}.welcome-copy .eyebrow{font-size:8px;letter-spacing:.16em}.welcome-copy h1{font-size:clamp(62px,15vw,82px);margin:22px auto 18px}.welcome-copy .intro{font-size:13px;max-width:330px}.welcome-trilingual{margin:23px 0 26px;gap:8px 11px;font-size:8px}.welcome-trilingual span+span:before{margin-right:11px}.welcome-shapes .shape-ring{width:60px;height:60px;left:5%;top:13%}.welcome-shapes .shape-arc{width:130px;height:130px;right:-42px;bottom:-86px}}
   </style>
   <link rel="stylesheet" href="css/site-shell.css?v=scroll-rhythm-1">
 </head>
