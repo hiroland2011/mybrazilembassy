@@ -5,9 +5,9 @@
   const savedLanguage = localStorage.getItem('embassyDemoLanguage');
   const language = ['en', 'pt'].includes(savedLanguage) ? savedLanguage : 'fr';
   const labelsByLanguage = {
-    fr: { brand: 'Brésil<small>Ambassade du Brésil</small>', home: 'Accueil', countryMenu: 'Informations sur le pays', countryFacts: "Fiches d'informations générales", topicsMenu: 'Fiches thématiques', demography: 'Démographie', issues: 'Enjeux', history: 'Histoire contemporaine du pays', leader: 'Chef d’État', about: 'À propos', login: 'Connexion', menu: 'Menu', navigation: 'Navigation', profile: 'Profil', changeLanguage: 'Changer de langue', menuOpen: 'Ouvrir le menu', menuClose: 'Fermer le menu' },
-    en: { brand: 'Brazil<small>Embassy of Brazil</small>', home: 'Home', countryMenu: 'Country information', countryFacts: 'General information', topicsMenu: 'Thematic fact sheets', demography: 'Demography', issues: 'Issues', history: 'Contemporary history of the country', leader: 'Head of State', about: 'About us', login: 'Sign in', menu: 'Menu', navigation: 'Navigation', profile: 'Profile', changeLanguage: 'Change language', menuOpen: 'Open menu', menuClose: 'Close menu' },
-    pt: { brand: 'Brasil<small>Embaixada do Brasil</small>', home: 'Início', countryMenu: 'Informações sobre o país', countryFacts: 'Informações gerais', topicsMenu: 'Fichas temáticas', demography: 'Demografia', issues: 'Desafios', history: 'História contemporânea do país', leader: 'Chefe de Estado', about: 'Sobre nós', login: 'Entrar', menu: 'Menu', navigation: 'Navegação', profile: 'Perfil', changeLanguage: 'Mudar idioma', menuOpen: 'Abrir o menu', menuClose: 'Fechar o menu' }
+    fr: { brand: 'Brésil<small>Ambassade du Brésil</small>', home: 'Accueil', countryMenu: 'Informations sur le pays', countryFacts: "Fiches d'informations générales", topicsMenu: 'Fiches thématiques', demography: 'Démographie', issues: "3 enjeux de l'année à surveiller", history: 'Histoire contemporaine du pays', leader: 'Fiche du chef d’État', about: 'À propos', login: 'Connexion', menu: 'Menu', navigation: 'Navigation', profile: 'Profil', changeLanguage: 'Changer de langue', menuOpen: 'Ouvrir le menu', menuClose: 'Fermer le menu' },
+    en: { brand: 'Brazil<small>Embassy of Brazil</small>', home: 'Home', countryMenu: 'Country information', countryFacts: 'General information', topicsMenu: 'Thematic fact sheets', demography: 'Demography', issues: '3 issues to watch this year', history: 'Contemporary history of the country', leader: 'Head of State profile', about: 'About us', login: 'Sign in', menu: 'Menu', navigation: 'Navigation', profile: 'Profile', changeLanguage: 'Change language', menuOpen: 'Open menu', menuClose: 'Close menu' },
+    pt: { brand: 'Brasil<small>Embaixada do Brasil</small>', home: 'Início', countryMenu: 'Informações sobre o país', countryFacts: 'Informações gerais', topicsMenu: 'Fichas temáticas', demography: 'Demografia', issues: '3 desafios a acompanhar este ano', history: 'História contemporânea do país', leader: 'Perfil do chefe de Estado', about: 'Sobre nós', login: 'Entrar', menu: 'Menu', navigation: 'Navegação', profile: 'Perfil', changeLanguage: 'Mudar idioma', menuOpen: 'Abrir o menu', menuClose: 'Fechar o menu' }
   };
   const labels = labelsByLanguage[language];
   const footerVariant = page === 'brezil_vs_canada.html' ? 'compare' : page === 'information_sur_le_pays.html' ? 'country' : 'default';
@@ -48,16 +48,18 @@
       const active = page === href;
       return `<a href="${href}" data-t="${key}" data-shell-key="${key}"${active ? ' class="current" aria-current="page"' : ''}>${label}</a>`;
     };
-    const countryActive = page === 'information_sur_le_pays.html';
-    const topicPages = ['brezil_vs_canada.html', 'enjeux_a_suivre.html', 'histoire_contemporaine.html', 'fiche_sur_le_chef.html'];
+    const countryPages = ['information_sur_le_pays.html', 'enjeux_a_suivre.html', 'histoire_contemporaine.html', 'fiche_sur_le_chef.html'];
+    const countryActive = countryPages.includes(page);
+    const topicPages = ['brezil_vs_canada.html'];
     const topicsActive = topicPages.includes(page);
     const countryLink = makeLink('information_sur_le_pays.html', 'countryFacts', labels.countryFacts);
-    const topicLinks = [
-      makeLink('brezil_vs_canada.html', 'demography', labels.demography),
+    const countryLinks = [
+      countryLink,
       makeLink('enjeux_a_suivre.html', 'issues', labels.issues),
       makeLink('histoire_contemporaine.html', 'history', labels.history),
       makeLink('fiche_sur_le_chef.html', 'leader', labels.leader)
     ].join('');
+    const topicLinks = makeLink('brezil_vs_canada.html', 'demography', labels.demography);
     const aboutLink = makeLink('a_propos.html', 'about', labels.about);
     script.insertAdjacentHTML('beforebegin', `
       <header class="site-header" data-site-chrome><div class="wrap nav">
@@ -69,7 +71,7 @@
         <nav class="links" id="mainNav" aria-label="${labels.navigation}">
           <details class="header-nav-menu${countryActive ? ' current' : ''}">
             <summary data-shell-key="countryMenu">${labels.countryMenu}</summary>
-            <div class="header-dropdown">${countryLink}</div>
+            <div class="header-dropdown">${countryLinks}</div>
           </details>
           <details class="header-nav-menu${topicsActive ? ' current' : ''}">
             <summary data-shell-key="topicsMenu">${labels.topicsMenu}</summary>
