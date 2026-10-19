@@ -69,6 +69,7 @@
         </a>
         <button class="menu-toggle" id="menuToggle" type="button" data-shell-key="menu" aria-label="${labels.menuOpen}" aria-expanded="false" aria-controls="mainNav">${labels.menu}</button>
         <nav class="links" id="mainNav" aria-label="${labels.navigation}">
+          ${aboutLink}
           <details class="header-nav-menu${countryActive ? ' current' : ''}">
             <summary data-shell-key="countryMenu">${labels.countryMenu}</summary>
             <div class="header-dropdown">${countryLinks}</div>
@@ -77,7 +78,6 @@
             <summary data-shell-key="topicsMenu">${labels.topicsMenu}</summary>
             <div class="header-dropdown">${topicLinks}</div>
           </details>
-          ${aboutLink}
         </nav>
         <div class="auth-actions">
           <button class="login-link" id="loginOpen" type="button" data-t="login" data-shell-key="login">${labels.login}</button>
