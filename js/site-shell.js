@@ -4,11 +4,49 @@
   const page = location.pathname.split('/').pop() || 'index.html';
   const savedLanguage = localStorage.getItem('embassyDemoLanguage');
   const language = ['en', 'pt'].includes(savedLanguage) ? savedLanguage : 'fr';
-  const labels = {
-    fr: { brand: 'Brésil<small>Ambassade du Brésil</small>', facts: 'Repères', compare: 'Comparaison', issues: 'Enjeux', history: 'Histoire', leader: 'Chef d’État', about: 'À propos', factSheets: 'Fiches pays', login: 'Connexion', menu: 'Menu' },
-    en: { brand: 'Brazil<small>Embassy of Brazil</small>', facts: 'At a glance', compare: 'Compare', issues: 'Issues', history: 'History', leader: 'Head of State', about: 'About us', factSheets: 'Fact sheets', login: 'Sign in', menu: 'Menu' },
-    pt: { brand: 'Brasil<small>Embaixada do Brasil</small>', facts: 'Em resumo', compare: 'Comparação', issues: 'Desafios', history: 'História', leader: 'Chefe de Estado', about: 'Sobre nós', factSheets: 'Fichas informativas', login: 'Entrar', menu: 'Menu' }
-  }[language];
+  const labelsByLanguage = {
+    fr: { brand: 'Brésil<small>Ambassade du Brésil</small>', home: 'Accueil', facts: 'Repères', compare: 'Comparaison', issues: 'Enjeux', history: 'Histoire', leader: 'Chef d’État', about: 'À propos', factSheets: 'Fiches pays', login: 'Connexion', menu: 'Menu', navigation: 'Navigation', profile: 'Profil', changeLanguage: 'Changer de langue', menuOpen: 'Ouvrir le menu', menuClose: 'Fermer le menu' },
+    en: { brand: 'Brazil<small>Embassy of Brazil</small>', home: 'Home', facts: 'At a glance', compare: 'Compare', issues: 'Issues', history: 'History', leader: 'Head of State', about: 'About us', factSheets: 'Fact sheets', login: 'Sign in', menu: 'Menu', navigation: 'Navigation', profile: 'Profile', changeLanguage: 'Change language', menuOpen: 'Open menu', menuClose: 'Close menu' },
+    pt: { brand: 'Brasil<small>Embaixada do Brasil</small>', home: 'Início', facts: 'Em resumo', compare: 'Comparação', issues: 'Desafios', history: 'História', leader: 'Chefe de Estado', about: 'Sobre nós', factSheets: 'Fichas informativas', login: 'Entrar', menu: 'Menu', navigation: 'Navegação', profile: 'Perfil', changeLanguage: 'Mudar idioma', menuOpen: 'Abrir menu', menuClose: 'Fechar menu' }
+  };
+  const labels = labelsByLanguage[language];
+  const footerVariant = page === 'brezil_vs_canada.html' ? 'compare' : page === 'information_sur_le_pays.html' ? 'country' : 'default';
+  const footerLabels = {
+    fr: { default: 'BRÉSIL · CANADA — DOSSIER DIPLOMATIQUE', compare: 'BRÉSIL — CANADA · DOSSIER DIPLOMATIQUE', country: 'BRÉSIL · DOSSIER DIPLOMATIQUE' },
+    en: { default: 'BRAZIL · CANADA — DIPLOMATIC BRIEF', compare: 'BRAZIL — CANADA · DIPLOMATIC DOSSIER', country: 'BRAZIL · DIPLOMATIC DOSSIER' },
+    pt: { default: 'BRASIL · CANADÁ — DOSSIÊ DIPLOMÁTICO', compare: 'BRASIL — CANADÁ · DOSSIÊ DIPLOMÁTICO', country: 'BRASIL · DOSSIÊ DIPLOMÁTICO' }
+  };
+  const getCurrentLabels = () => labelsByLanguage[document.documentElement.lang] || labelsByLanguage.fr;
+  const refreshShellText = () => {
+    const current = getCurrentLabels();
+    document.querySelectorAll('[data-shell-key]').forEach(el => {
+      const key = el.dataset.shellKey;
+      const value = key === 'navFacts' ? current.facts
+        : key === 'navCompare' ? current.compare
+          : key === 'navIssues' ? current.issues
+            : key === 'navHistory' ? current.history
+              : key === 'navLeader' ? current.leader
+                : key === 'navAbout' ? current.about : current[key];
+      if (value === undefined) return;
+      if (key === 'brand') el.innerHTML = value;
+      else el.textContent = value;
+    });
+    const profile = document.getElementById('profileOpen');
+    const homeLink = document.querySelector('[data-shell-home]');
+    const langButton = document.getElementById('lang');
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
+    if (profile) { profile.setAttribute('aria-label', current.profile); profile.title = current.profile; }
+    if (homeLink) homeLink.setAttribute('aria-label', current.home);
+    if (langButton) langButton.setAttribute('aria-label', current.changeLanguage);
+    if (nav) nav.setAttribute('aria-label', current.navigation);
+    if (menuToggle) menuToggle.setAttribute('aria-label', menuToggle.getAttribute('aria-expanded') === 'true' ? current.menuClose : current.menuOpen);
+    const footerText = document.querySelector('[data-shell-footer]');
+    if (footerText) footerText.textContent = footerLabels[document.documentElement.lang]?.[footerVariant] || footerLabels.fr[footerVariant];
+  };
+  window.getSiteShellText = (lang, key) => labelsByLanguage[lang]?.[key] || labelsByLanguage.fr[key];
+  new MutationObserver(refreshShellText).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+  window.addEventListener('storage', event => { if (event.key === 'embassyDemoLanguage') refreshShellText(); });
   document.documentElement.lang = language;
   const navigation = [
     ['information_sur_le_pays.html', 'navFacts', labels.facts],
@@ -22,7 +60,7 @@
   if (script.dataset.part === 'header') {
     const makeLink = ([href, key, label]) => {
       const active = page === href;
-      return `<a href="${href}" data-t="${key}"${active ? ' class="current" aria-current="page"' : ''}>${label}</a>`;
+      return `<a href="${href}" data-t="${key}" data-shell-key="${key}"${active ? ' class="current" aria-current="page"' : ''}>${label}</a>`;
     };
     const factsLink = makeLink(navigation[0]);
     const aboutLink = makeLink(navigation[5]);
@@ -30,24 +68,24 @@
     const factSheetActive = factSheetItems.some(([href]) => page === href);
     const factSheetLinks = factSheetItems.map(makeLink).join('');
     script.insertAdjacentHTML('beforebegin', `
-      <header class="site-header"><div class="wrap nav">
-        <a href="index.html#accueil" class="brand" aria-label="Accueil">
+      <header class="site-header" data-site-chrome><div class="wrap nav">
+        <a href="index.html#accueil" class="brand" data-shell-home aria-label="${labels.home}">
           <img class="brandmark" src="img/icon/brazil-150403_1280.png" alt="" aria-hidden="true">
-          <span class="brandtext" data-t="brand">${labels.brand}</span>
+          <span class="brandtext" data-t="brand" data-shell-key="brand">${labels.brand}</span>
         </a>
-        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav">${labels.menu}</button>
-        <nav class="links" id="mainNav" aria-label="Navigation">
+        <button class="menu-toggle" id="menuToggle" type="button" data-shell-key="menu" aria-label="${labels.menuOpen}" aria-expanded="false" aria-controls="mainNav">${labels.menu}</button>
+        <nav class="links" id="mainNav" aria-label="${labels.navigation}">
           ${factsLink}
           <details class="header-facts-menu${factSheetActive ? ' current' : ''}">
-            <summary data-shell-fact-sheets>${labels.factSheets}</summary>
+            <summary data-shell-key="factSheets">${labels.factSheets}</summary>
             <div class="header-dropdown">${factSheetLinks}</div>
           </details>
           ${aboutLink}
         </nav>
         <div class="auth-actions">
-          <button class="login-link" id="loginOpen" type="button" data-t="login">${labels.login}</button>
-          <button class="profile-button" id="profileOpen" type="button" aria-label="Profil" title="Profil">C</button>
-          <button class="lang" id="lang" type="button" aria-label="Changer de langue">${language.toUpperCase()}⌄</button>
+          <button class="login-link" id="loginOpen" type="button" data-t="login" data-shell-key="login">${labels.login}</button>
+          <button class="profile-button" id="profileOpen" type="button" aria-label="${labels.profile}" title="${labels.profile}">C</button>
+          <button class="lang" id="lang" type="button" aria-label="${labels.changeLanguage}">${language.toUpperCase()}⌄</button>
         </div>
       </div><div class="reading-progress" aria-hidden="true"><span></span></div></header>`);
 
@@ -65,13 +103,7 @@
         nav.querySelector('.header-facts-menu')?.removeAttribute('open');
       }));
     }
-    const factSheetsLabel = document.querySelector('[data-shell-fact-sheets]');
-    const updateFactSheetsLabel = () => {
-      const lang = document.documentElement.lang || 'fr';
-      factSheetsLabel.textContent = lang === 'en' ? 'Fact sheets' : lang === 'pt' ? 'Fichas informativas' : 'Fiches pays';
-    };
-    updateFactSheetsLabel();
-    new MutationObserver(updateFactSheetsLabel).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+    refreshShellText();
     document.addEventListener('click', event => {
       if (!event.target.closest('.header-facts-menu')) document.querySelector('.header-facts-menu')?.removeAttribute('open');
     });
@@ -117,19 +149,12 @@
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initializeReveal, { once: true });
     else initializeReveal();
   } else if (script.dataset.part === 'footer') {
-    const leftKey = page === 'brezil_vs_canada.html' ? 'foot' : 'footerLeft';
-    const leftText = page === 'index.html'
-      ? 'BRÉSIL · CANADA — DOSSIER DIPLOMATIQUE'
-      : page === 'brezil_vs_canada.html'
-        ? 'BRÉSIL — CANADA · DOSSIER DIPLOMATIQUE'
-        : page === 'information_sur_le_pays.html'
-          ? 'BRÉSIL · DOSSIER DIPLOMATIQUE'
-          : 'BRÉSIL · CANADA — DOSSIER DIPLOMATIQUE';
     const rightText = page === 'information_sur_le_pays.html' ? '2026–2027' : 'OTTAWA · 2026–2027';
     script.insertAdjacentHTML('beforebegin', `
-      <footer class="site-footer">
-        <div class="wrap footer-inner"><span data-t="${leftKey}">${leftText}</span><span>${rightText}</span></div>
+      <footer class="site-footer" data-site-chrome>
+        <div class="wrap footer-inner"><span data-shell-footer></span><span>${rightText}</span></div>
       </footer>`);
+    refreshShellText();
   }
 
   script.remove();
