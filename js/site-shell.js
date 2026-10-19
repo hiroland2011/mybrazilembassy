@@ -5,9 +5,9 @@
   const savedLanguage = localStorage.getItem('embassyDemoLanguage');
   const language = ['en', 'pt'].includes(savedLanguage) ? savedLanguage : 'fr';
   const labels = {
-    fr: { brand: 'Brésil<small>Ambassade du Brésil</small>', facts: 'Repères', compare: 'Comparaison', issues: 'Enjeux 2026–27', history: 'Histoire', leader: 'Chef d’État', about: 'À propos', factSheets: 'Fiches pays', login: 'Connexion', menu: 'Menu' },
-    en: { brand: 'Brazil<small>Embassy of Brazil</small>', facts: 'At a glance', compare: 'Compare', issues: 'Issues 2026–27', history: 'History', leader: 'Head of State', about: 'About us', factSheets: 'Fact sheets', login: 'Sign in', menu: 'Menu' },
-    pt: { brand: 'Brasil<small>Embaixada do Brasil</small>', facts: 'Em resumo', compare: 'Comparação', issues: 'Desafios 2026–27', history: 'História', leader: 'Chefe de Estado', about: 'Sobre nós', factSheets: 'Fichas informativas', login: 'Entrar', menu: 'Menu' }
+    fr: { brand: 'Brésil<small>Ambassade du Brésil</small>', facts: 'Repères', compare: 'Comparaison', issues: 'Enjeux', history: 'Histoire', leader: 'Chef d’État', about: 'À propos', factSheets: 'Fiches pays', login: 'Connexion', menu: 'Menu' },
+    en: { brand: 'Brazil<small>Embassy of Brazil</small>', facts: 'At a glance', compare: 'Compare', issues: 'Issues', history: 'History', leader: 'Head of State', about: 'About us', factSheets: 'Fact sheets', login: 'Sign in', menu: 'Menu' },
+    pt: { brand: 'Brasil<small>Embaixada do Brasil</small>', facts: 'Em resumo', compare: 'Comparação', issues: 'Desafios', history: 'História', leader: 'Chefe de Estado', about: 'Sobre nós', factSheets: 'Fichas informativas', login: 'Entrar', menu: 'Menu' }
   }[language];
   document.documentElement.lang = language;
   const navigation = [
