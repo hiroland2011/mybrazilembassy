@@ -5,6 +5,10 @@ Pour en lire plus:
 https://ici.radio-canada.ca/nouvelle/2289827/lula-bolsonaro-election-presidentielle-bresil-premier-tour
 https://ici.radio-canada.ca/nouvelle/2289827/lula-bolsonaro-election-presidentielle-bresil-premier-tour#:~:text=Toutefois%2C%20les%20%C3%A9lecteurs%20se%20plaignent%20du%20co%C3%BBt%20de%20la%20vie%20et%20de%20la%20criminalit%C3%A9%20galopante.
 https://www.bbc.com/afrique/articles/ckjwedpd9j2qo
+Images:
+https://www.franceinfo.fr/pictures/YAZdXThI6SOTLULDHbx02NGNUtk/0x0:1024x576/1500x843/2026/10/05/6ac2cdb9cd36e263661924.jpg
+https://img.lemde.fr/2026/08/02/0/0/1920/1280/664/0/75/0/2767a8d_ftp-1-7kpu36nognn8-5761134-01-06.jpg
+
 
 **Violence contre plusieurs communautés**
 
@@ -12,6 +16,9 @@ Au Brésil, il y a beaucoup de violence qui vient sous différentes formes et en
 Pour en lire plus:
 https://www.amnesty.be/infos/rapports-annuels/rapport-annuel-2025-2026/rapport-annuel-2026-ameriques/article/bresil-rapport-annuel-2026
 https://cimi.org.br/2026/08/rapport-violence-contre-peuples-autochtones-bresil-2025/
+Images:
+https://i.la-croix.com/x/smart/2020/01/31/1201075422/Au-Bresil-victimes-violences-policieres-augmentation-473-Cette-violence-concerne-premier-population-noire-quartiers-populaires_0.jpg
+https://amazonwatch.org/wp-content/uploads/2025/04/munduruku-highway-blockade-1200x900.jpg
 
 
 **Scandale Banco Master**
@@ -20,3 +27,6 @@ En novembre 2025, Banco Master entre en liquidation avec des pertes de 47,3 mill
 Pour en lire plus:
 https://www.latribune.fr/article/economie/international/2669309956155314/bresil-comment-le-scandale-bolsonaro-rebat-la-bataille-ue-mercosur-et-les-cartes-de-l-europe#:~:text=Des%20enregistrements%20audio,du%20clan%20Bolsonaro.
 https://theconversation.com/au-bresil-laffaire-banco-master-fait-trembler-le-monde-politique-et-eclabousse-la-campagne-presidentielle-292846#:~:text=%C3%80%20premi%C3%A8re%20vue,de%20cette%20institution.
+Images:
+https://s.rfi.fr/media/display/8850b8ec-a7e1-11f1-b649-005056a90284/w:1024/p:16x9/BRESIL-JUSTICE-ALEXANDRE-DE-MORAES-ANDRE-MENDONCA.jpg
+https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20260124_AMP001.jpg
