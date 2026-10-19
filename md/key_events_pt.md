@@ -25,7 +25,7 @@ João Goulart, ex-presidente brasileiro, foi acusado de ser comunista por divers
 O projeto da Rodovia Transamazônica, lançado pelo presidente Emílio Médici em 1970, tinha como objetivo conectar a Amazônia a diversas regiões do Brasil. O projeto conseguiu atrair população brasileira para a região amazônica. No entanto, sua construção gerou preocupações em muitos, pois causou a destruição da Floresta Amazônica, que desempenha um papel fundamental na absorção de gases de efeito estufa.
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 7. 1976 — Assassinato de Juscelino Kubitschek
+### 7. 1976 — Morte de Juscelino Kubitschek
 A versão oficial sobre a morte do ex-presidente e opositor da ditadura, Juscelino Kubitschek, apontava para um acidente de carro. No entanto, muitas pessoas acreditavam que ele havia sido assassinado pelo regime militar. Em 2013, a Comissão da Verdade de São Paulo concluiu, com base em diversas evidências, que a morte de Kubitschek foi um assassinato, resultado que foi contestado em 2014.
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
@@ -42,7 +42,7 @@ Fernando Collor de Mello, o primeiro presidente eleito após a ditadura, foi acu
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
 ### 11. Outubro de 1992 — Massacre do Carandiru
-Em 2 de outubro de 1992, uma altercação durante a transferência de um detento ocorreu na Casa de Detenção do Carandiru, um presídio severamente superlotado no estado de São Paulo. O governador, Luís Antônio Fleury Filho, é apontado por ter impedido negociações com os amotinados e ordenado a invasão da prisão pela força. A Polícia Militar, sob o comando do coronel Ubiratan Guimarães, atirou contra os detentos, resultando na morte de 102 prisioneiros.
+Em 2 de outubro de 1992, uma altercação durante a transferência de um detento ocorreu na Casa de Detenção do Carandiru, um presídio severamente superlotado no estado de São Paulo. O governador, Luís Antônio Fleury, é apontado por ter impedido negociações com os amotinados e ordenado a invasão da prisão pela força. A Polícia Militar, sob o comando do coronel Ubiratan Guimarães, atirou contra os detentos, resultando na morte de 102 prisioneiros.
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
 ### 12. 1994 — Lançamento do Plano Real
@@ -78,6 +78,6 @@ De 26 de abril a 2 de maio, no estado do Rio Grande do Sul, no sul do Brasil, ch
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
 ### 20. 2025 — Prisão de Bolsonaro
-Bolsonaro promoveu uma tentativa de golpe de Estado contra seu opositor, Lula, e foi declarado culpado em setembro por liderar uma organização criminosa que conspirou para se manter no poder após a vitória eleitoral de Lula em 2022. Ele foi condenado a 27 anos de prisão. Donald Trump posteriormente impôs sobretaxas comerciais ao Brasil com o objetivo de pressionar pela concessão de um perdão presidencial a Bolsonaro.
+Bolsonaro promoveu uma tentativa de golpe de Estado contra seu opositor, Lula, e foi declarado culpado em setembro por liderar uma organização criminosa que conspirou para se manter no poder após a vitória eleitoral de Lula em 2022. Ele foi condenado a 27 anos de prisão. Donald Trump posteriormente impôs sobretaxas comerciais ao Brasil com o objetivo de pressionar pela concessão de um perdão presidencial a Bolsonaro. Flávio também tentou romper sua tornozeleira eletrônica sem sucesso, mas as autoridades chegaram para prendê-lo.
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)

@@ -24,7 +24,7 @@ João Goulart, a former Brazilian president, was accused by many—including sec
 The Trans-Amazonian Highway project, launched by President Emílio Médici in 1970, aimed to connect the Amazon region with various other parts of Brazil. The project succeeded in attracting settlers to the Amazon. However, its construction raised major concerns as it caused widespread deforestation in the Amazon rainforest, which plays a crucial role in absorbing greenhouse gases.
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
-### 7. 1976 — Assassination of Juscelino Kubitschek
+### 7. 1976 — Death of Juscelino Kubitschek
 The official version of the death of former president and dictatorship opponent Juscelino Kubitschek was a car accident. However, many believed he was assassinated by the military regime. In 2013, the São Paulo Truth Commission concluded based on evidence that Kubitschek's death was an assassination, though this finding was later refuted in 2014.
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
@@ -41,7 +41,7 @@ Fernando Collor de Mello, the first democratically elected president following t
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
 ### 11. October 1992 — Carandiru Massacre
-On October 2, 1992, an altercation during a prisoner transfer led to a riot in the severely overcrowded Carandiru detention center in the state of São Paulo. Governor Luís Antônio Fleury Filho reportedly blocked negotiations with the rioting inmates and ordered a forceful storming of the prison. The Military Police, commanded by Colonel Ubiratan Guimarães, opened fire on the inmates, resulting in the deaths of 102 prisoners.
+On October 2, 1992, an altercation during a prisoner transfer led to a riot in the severely overcrowded Carandiru detention center in the state of São Paulo. Governor Luís Antônio Fleury reportedly blocked negotiations with the rioting inmates and ordered a forceful storming of the prison. The Military Police, commanded by Colonel Ubiratan Guimarães, opened fire on the inmates, resulting in the deaths of 102 prisoners.
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
 ### 12. 1994 — Launch of the Plano Real
@@ -61,7 +61,7 @@ In 2009, the BRIC group was formed, with Brazil joining as a founding member due
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
 ### 16. 2014 — World Cup in Brazil
-The 20th edition of the FIFA World Cup was hosted by Brazil from June 12 to July 13, 2014, with the final held in Rio de Janeiro (and ultimately won by Germany/Argentina in final stage). It was a major event for the country given football's central place in Brazilian culture, though Brazil did not win the tournament.
+The 20th edition of the FIFA World Cup was hosted by Brazil from June 12 to July 13, 2014, with the final held in Rio de Janeiro and won by Germany. It was a major event for the country given football's central place in Brazilian culture, though Brazil did not win the tournament.
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
 ### 17. 2016 — Olympic Games in Rio de Janeiro
@@ -77,6 +77,6 @@ From April 26 to May 2, torrential rains driven by El Niño struck the southern 
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
 ### 20. 2025 — Imprisonment of Bolsonaro
-Bolsonaro attempted a coup against his opponent, Lula, and was found guilty in September of leading a criminal organization that conspired to maintain power after Lula's 2022 election victory. He was sentenced to 27 years in prison. Donald Trump subsequently imposed tariffs on Brazil in an attempt to pressure the government into granting Bolsonaro a pardon.
+Bolsonaro attempted a coup against his opponent, Lula, and was found guilty in September of leading a criminal organization that conspired to maintain power after Lula's 2022 election victory. He was sentenced to 27 years in prison. Donald Trump subsequently imposed tariffs on Brazil in an attempt to pressure the government into granting Bolsonaro a pardon. Flávio also tried unsuccessfully to break his electronic ankle monitor before authorities arrived to arrest him.
 - [Image 1: Image de test 1](https://wallpaperaccess.com/full/4695115.jpg)
 - [Image 2: Image de test 2](https://www.goodfreephotos.com/albums/brazil/rio-de-janeiro/cityscape-and-landscape-view-of-rio-de-janeiro-brazil.jpg)
