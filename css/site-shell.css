@@ -56,6 +56,10 @@ main::after {
 .site-header .brandtext { color: #142c29; font: 700 13px/1.2 'Manrope', sans-serif; letter-spacing: .04em; text-transform: uppercase; }
 .site-header .brandtext small { display: block; margin-top: 4px; color: #6f7e78; font: 500 10px/1.2 'DM Sans', sans-serif; letter-spacing: .14em; }
 .site-header .links { flex: 0 0 340px; display: grid; grid-template-columns: 1fr 1.4fr 1fr; align-items: center; justify-items: center; gap: 0; margin-left: auto; margin-right: clamp(40px, 4.5vw, 64px); }
+@media (min-width: 821px) {
+  html[lang="fr"] .site-header .links,
+  html[lang="pt"] .site-header .links { flex: 0 0 auto; grid-template-columns: max-content max-content max-content; justify-items: start; column-gap: clamp(16px, 2vw, 24px); }
+}
 .site-header .links a { color: #53635c; font-size: 12px; font-weight: 600; text-decoration: none; white-space: nowrap; transition: color .2s ease; }
 .site-header .links a:hover, .site-header .links a.current { color: #08785c; }
 .site-header .links a.current { position: relative; }
