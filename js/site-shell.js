@@ -5,9 +5,9 @@
   const savedLanguage = localStorage.getItem('embassyDemoLanguage');
   const language = ['en', 'pt'].includes(savedLanguage) ? savedLanguage : 'fr';
   const labelsByLanguage = {
-    fr: { brand: 'Brésil<small>Ambassade du Brésil</small>', home: 'Accueil', facts: "Fiches d'informations générales", compare: 'Comparaison', issues: 'Enjeux', history: 'Histoire', leader: 'Chef d’État', about: 'À propos', factSheets: 'Fiches pays', login: 'Connexion', menu: 'Menu', navigation: 'Navigation', profile: 'Profil', changeLanguage: 'Changer de langue', menuOpen: 'Ouvrir le menu', menuClose: 'Fermer le menu' },
-    en: { brand: 'Brazil<small>Embassy of Brazil</small>', home: 'Home', facts: 'General Information', compare: 'Compare', issues: 'Issues', history: 'History', leader: 'Head of State', about: 'About us', factSheets: 'Fact sheets', login: 'Sign in', menu: 'Menu', navigation: 'Navigation', profile: 'Profile', changeLanguage: 'Change language', menuOpen: 'Open menu', menuClose: 'Close menu' },
-    pt: { brand: 'Brasil<small>Embaixada do Brasil</small>', home: 'Início', facts: 'Informações gerais', compare: 'Comparação', issues: 'Desafios', history: 'História', leader: 'Chefe de Estado', about: 'Sobre nós', factSheets: 'Fichas informativas', login: 'Entrar', menu: 'Menu', navigation: 'Navegação', profile: 'Perfil', changeLanguage: 'Mudar idioma', menuOpen: 'Abrir menu', menuClose: 'Fechar menu' }
+    fr: { brand: 'Brésil<small>Ambassade du Brésil</small>', home: 'Accueil', countryMenu: 'Informations sur le pays', countryFacts: "Fiches d'informations générales", topicsMenu: 'Fiches thématiques', demography: 'Démographie', issues: 'Enjeux', history: 'Histoire contemporaine du pays', leader: 'Chef d’État', about: 'À propos', login: 'Connexion', menu: 'Menu', navigation: 'Navigation', profile: 'Profil', changeLanguage: 'Changer de langue', menuOpen: 'Ouvrir le menu', menuClose: 'Fermer le menu' },
+    en: { brand: 'Brazil<small>Embassy of Brazil</small>', home: 'Home', countryMenu: 'Country information', countryFacts: 'General information', topicsMenu: 'Thematic fact sheets', demography: 'Demography', issues: 'Issues', history: 'Contemporary history of the country', leader: 'Head of State', about: 'About us', login: 'Sign in', menu: 'Menu', navigation: 'Navigation', profile: 'Profile', changeLanguage: 'Change language', menuOpen: 'Open menu', menuClose: 'Close menu' },
+    pt: { brand: 'Brasil<small>Embaixada do Brasil</small>', home: 'Início', countryMenu: 'Informações sobre o país', countryFacts: 'Informações gerais', topicsMenu: 'Fichas temáticas', demography: 'Demografia', issues: 'Desafios', history: 'História contemporânea do país', leader: 'Chefe de Estado', about: 'Sobre nós', login: 'Entrar', menu: 'Menu', navigation: 'Navegação', profile: 'Perfil', changeLanguage: 'Mudar idioma', menuOpen: 'Abrir o menu', menuClose: 'Fechar o menu' }
   };
   const labels = labelsByLanguage[language];
   const footerVariant = page === 'brezil_vs_canada.html' ? 'compare' : page === 'information_sur_le_pays.html' ? 'country' : 'default';
@@ -21,12 +21,7 @@
     const current = getCurrentLabels();
     document.querySelectorAll('[data-shell-key]').forEach(el => {
       const key = el.dataset.shellKey;
-      const value = key === 'navFacts' ? current.facts
-        : key === 'navCompare' ? current.compare
-          : key === 'navIssues' ? current.issues
-            : key === 'navHistory' ? current.history
-              : key === 'navLeader' ? current.leader
-                : key === 'navAbout' ? current.about : current[key];
+      const value = current[key];
       if (value === undefined) return;
       if (key === 'brand') el.innerHTML = value;
       else el.textContent = value;
@@ -48,25 +43,22 @@
   new MutationObserver(refreshShellText).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
   window.addEventListener('storage', event => { if (event.key === 'embassyDemoLanguage') refreshShellText(); });
   document.documentElement.lang = language;
-  const navigation = [
-    ['information_sur_le_pays.html', 'navFacts', labels.facts],
-    ['brezil_vs_canada.html', 'navCompare', labels.compare],
-    ['enjeux_a_suivre.html', 'navIssues', labels.issues],
-    ['histoire_contemporaine.html', 'navHistory', labels.history],
-    ['fiche_sur_le_chef.html', 'navLeader', labels.leader],
-    ['a_propos.html', 'navAbout', labels.about]
-  ];
-
   if (script.dataset.part === 'header') {
-    const makeLink = ([href, key, label]) => {
+    const makeLink = (href, key, label) => {
       const active = page === href;
       return `<a href="${href}" data-t="${key}" data-shell-key="${key}"${active ? ' class="current" aria-current="page"' : ''}>${label}</a>`;
     };
-    const factsLink = makeLink(navigation[0]);
-    const aboutLink = makeLink(navigation[5]);
-    const factSheetItems = navigation.slice(1, 5);
-    const factSheetActive = factSheetItems.some(([href]) => page === href);
-    const factSheetLinks = factSheetItems.map(makeLink).join('');
+    const countryActive = page === 'information_sur_le_pays.html';
+    const topicPages = ['brezil_vs_canada.html', 'enjeux_a_suivre.html', 'histoire_contemporaine.html', 'fiche_sur_le_chef.html'];
+    const topicsActive = topicPages.includes(page);
+    const countryLink = makeLink('information_sur_le_pays.html', 'countryFacts', labels.countryFacts);
+    const topicLinks = [
+      makeLink('brezil_vs_canada.html', 'demography', labels.demography),
+      makeLink('enjeux_a_suivre.html', 'issues', labels.issues),
+      makeLink('histoire_contemporaine.html', 'history', labels.history),
+      makeLink('fiche_sur_le_chef.html', 'leader', labels.leader)
+    ].join('');
+    const aboutLink = makeLink('a_propos.html', 'about', labels.about);
     script.insertAdjacentHTML('beforebegin', `
       <header class="site-header" data-site-chrome><div class="wrap nav">
         <a href="index.html#accueil" class="brand" data-shell-home aria-label="${labels.home}">
@@ -75,10 +67,13 @@
         </a>
         <button class="menu-toggle" id="menuToggle" type="button" data-shell-key="menu" aria-label="${labels.menuOpen}" aria-expanded="false" aria-controls="mainNav">${labels.menu}</button>
         <nav class="links" id="mainNav" aria-label="${labels.navigation}">
-          ${factsLink}
-          <details class="header-facts-menu${factSheetActive ? ' current' : ''}">
-            <summary data-shell-key="factSheets">${labels.factSheets}</summary>
-            <div class="header-dropdown">${factSheetLinks}</div>
+          <details class="header-nav-menu${countryActive ? ' current' : ''}">
+            <summary data-shell-key="countryMenu">${labels.countryMenu}</summary>
+            <div class="header-dropdown">${countryLink}</div>
+          </details>
+          <details class="header-nav-menu${topicsActive ? ' current' : ''}">
+            <summary data-shell-key="topicsMenu">${labels.topicsMenu}</summary>
+            <div class="header-dropdown">${topicLinks}</div>
           </details>
           ${aboutLink}
         </nav>
@@ -89,24 +84,27 @@
         </div>
       </div><div class="reading-progress" aria-hidden="true"><span></span></div></header>`);
 
+    const nav = document.getElementById('mainNav');
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      document.getElementById('menuToggle').setAttribute('aria-expanded', 'false');
+      nav.querySelectorAll('.header-nav-menu').forEach(menu => menu.removeAttribute('open'));
+    }));
     // The comparison page already wires a translated menu handler of its own.
     if (page !== 'brezil_vs_canada.html') {
       const toggle = document.getElementById('menuToggle');
-      const nav = document.getElementById('mainNav');
       toggle.addEventListener('click', () => {
         const open = nav.classList.toggle('open');
         toggle.setAttribute('aria-expanded', String(open));
       });
-      nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-        nav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        nav.querySelector('.header-facts-menu')?.removeAttribute('open');
-      }));
     }
     refreshShellText();
     document.addEventListener('click', event => {
-      if (!event.target.closest('.header-facts-menu')) document.querySelector('.header-facts-menu')?.removeAttribute('open');
+      if (!event.target.closest('.header-nav-menu')) document.querySelectorAll('.header-nav-menu').forEach(menu => menu.removeAttribute('open'));
     });
+    nav.querySelectorAll('.header-nav-menu').forEach(menu => menu.addEventListener('toggle', () => {
+      if (menu.open) nav.querySelectorAll('.header-nav-menu').forEach(other => { if (other !== menu) other.removeAttribute('open'); });
+    }));
     const initializeReveal = () => {
       const progress = document.querySelector('.reading-progress span');
       if (progress) {
