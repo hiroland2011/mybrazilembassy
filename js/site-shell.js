@@ -10,7 +10,7 @@
     pt: { brand: 'Brasil<small>Embaixada do Canadá no Brasil</small>', home: 'Início', countryMenu: 'Informações sobre o país', countryFacts: 'Informações gerais', topicsMenu: 'Fichas temáticas', demography: 'Demografia', issues: '3 desafios a acompanhar este ano', history: 'História contemporânea do país', leader: 'Perfil do chefe de Estado', about: 'Sobre nós', login: 'Entrar', menu: 'Menu', navigation: 'Navegação', profile: 'Perfil', changeLanguage: 'Mudar idioma', menuOpen: 'Abrir o menu', menuClose: 'Fechar o menu' }
   };
   const labels = labelsByLanguage[language];
-  const footerVariant = page === 'brezil_vs_canada.html' ? 'compare' : page === 'information_sur_le_pays.html' ? 'country' : 'default';
+  const footerVariant = page === 'information_sur_le_pays.html' ? 'country' : 'default';
   const footerLabels = {
     fr: { default: 'BRÉSIL · CANADA — DOSSIER DIPLOMATIQUE', compare: 'BRÉSIL — CANADA · DOSSIER DIPLOMATIQUE', country: 'BRÉSIL · DOSSIER DIPLOMATIQUE' },
     en: { default: 'BRAZIL · CANADA — DIPLOMATIC BRIEF', compare: 'BRAZIL — CANADA · DIPLOMATIC DOSSIER', country: 'BRAZIL · DIPLOMATIC DOSSIER' },
@@ -92,14 +92,11 @@
       document.getElementById('menuToggle').setAttribute('aria-expanded', 'false');
       nav.querySelectorAll('.header-nav-menu').forEach(menu => menu.removeAttribute('open'));
     }));
-    // The comparison page already wires a translated menu handler of its own.
-    if (page !== 'brezil_vs_canada.html') {
-      const toggle = document.getElementById('menuToggle');
-      toggle.addEventListener('click', () => {
-        const open = nav.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', String(open));
-      });
-    }
+    const toggle = document.getElementById('menuToggle');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
     refreshShellText();
     document.addEventListener('click', event => {
       if (!event.target.closest('.header-nav-menu')) document.querySelectorAll('.header-nav-menu').forEach(menu => menu.removeAttribute('open'));
