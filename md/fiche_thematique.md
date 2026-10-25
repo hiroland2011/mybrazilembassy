@@ -7,3 +7,16 @@
 | **Taux de mortalité**<br>*(par 1000 habs.)* | 7,9 ‰ (2024) | 7,07 ‰ (2024) |
 | **Accroissement naturel** | 1,0 ‰ (2024) | 5,06 ‰ (2024) |
 | **Accroissement migratoire** | 326 204 personnes (2025) | -217 283 personnes (2025) |
+
+Extra paragraph:
+
+TENDANCES:  
+L’accroissement migratoire est négatif au Brésil, de -217 283 personnes en 2025. Cependant, l’accroissement naturel compense pour la décroissance migratoire, ce qui fait en sorte que la croissance démographique reste positive, mais avec un taux de fécondité qui est sous le seuil de renouvèlement des générations. 
+
+CONSÉQUENCES:
+Une bonne croissance démographique fait en sorte que le pays n’aura pas de manque en main d'œuvre et qu’il n’y aura pas de vieillissement de population. Il y aura assez de jeunes pour supporter les personnes âgées qui n’auront plus à travailler jusqu’à un âge très élevé. Cependant, s’il y a trop de jeunes, cela peut causer le manque de ressources, comme le manque d’éducation pour les jeunes ainsi que l’augmentation des prix, ce qui affecte la qualité de vie des familles.
+
+RECOMMENDATIONS: 
+Puisque le taux de fécondité est sous le seuil de renouvèlement des générations, des politiques natalistes pourront être mises en place, principalement d'allonger le congé parental. Bien que le congé soit 100% rémunéré par l'employeur (remboursé par le gouvernement), le congé de maternité est de 120 jours et le congé de paternité est d'un maximum de cinq jours. En allongeant le congé parental, les parents auront assez de temps pour s'occuper de leur bébé et les couples qui contemplent avoir des enfants seront rassurés d'avoir un congé ayant une durée raisonnable.
+
+Puisque l’accroissement migratoire est négatif, il faut trouver des manières de stimuler l'immigration en le faisant ressortir dans le gouvernement. Depuis 2016, le Brésil travaille avec l'OIM, l'Organisation Internationale pour les Migrations, pour faciliter l'intégration des immigrants, d'obtention d'emploi et d'accès au service, ce qui fonctionne. Les immigrants vont se sentir bien intégrés et vont possiblement encourager leurs proches à immigrer au Brésil.
