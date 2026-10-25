@@ -127,6 +127,16 @@ main::after { top: 520px; opacity: .45; }
  .analysis-hint { max-width: 120px; }
 }
 @media(prefers-reduced-motion:reduce) { .analysis-card.arrive { animation: none; } }
+
+.analysis-gallery { margin-top: 22px; padding-top: 18px; border-top: 1px solid #e4e9e1; }
+.analysis-gallery-title { margin: 0 0 11px; color: #839087; font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.analysis-gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; }
+.analysis-gallery figure { position: relative; min-width: 0; aspect-ratio: 16 / 8.5; margin: 0; overflow: hidden; border-radius: 4px; background: #e4e9df; }
+.analysis-gallery img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+.analysis-gallery figure:hover img { transform: scale(1.04); }
+.analysis-gallery figcaption { position: absolute; right: 7px; bottom: 7px; left: 7px; width: fit-content; max-width: calc(100% - 14px); padding: 5px 7px; border-radius: 2px; background: #142c29dc; color: #fffefa; font-size: 8px; line-height: 1.3; }
+@media(max-width:650px) { .analysis-gallery { margin-top: 18px; } .analysis-gallery-grid { grid-template-columns: 1fr; gap: 8px; } .analysis-gallery figure { aspect-ratio: 16 / 9; } }
+
 </style>  <link rel="stylesheet" href="css/site-shell.css?v=nav-content-3">
 </head>
 <body><div class="topline"></div>
@@ -141,6 +151,7 @@ main::after { top: 520px; opacity: .45; }
     <div class="section-head"><div><h2 id="analysisTitle">Analyse démographique</h2></div><p class="section-note" id="analysisNote">Tendances, conséquences et recommandations pour le Brésil.</p></div>
     <div class="analysis-tabs" id="analysisTabs" role="tablist" aria-label="Choisir une partie de l’analyse"></div>
     <article class="analysis-card" id="analysisCard" role="tabpanel" aria-live="polite" aria-labelledby="analysisCardTitle"></article>
+    <div class="analysis-gallery"><h4 class="analysis-gallery-title" id="analysisGalleryTitle">Illustrations temporaires</h4><div class="analysis-gallery-grid"><figure><img id="photoSaoPaulo" src="img/city/São-Paulo.jpg" alt="Vue urbaine de São Paulo" loading="lazy"><figcaption>São Paulo</figcaption></figure><figure><img id="photoRio" src="img/city/Rio-de-Janeiro.jpg" alt="Vue urbaine de Rio de Janeiro" loading="lazy"><figcaption>Rio de Janeiro</figcaption></figure><figure><img id="photoSalvador" src="img/city/salvador-baiya.jpg" alt="Vue urbaine de Salvador" loading="lazy"><figcaption>Salvador</figcaption></figure></div></div>
     <div class="analysis-controls"><span class="analysis-hint" id="analysisHint">Sélectionnez une carte ou utilisez les flèches pour continuer.</span><div class="analysis-dots" id="analysisDots" aria-label="Progression"></div><div class="analysis-arrows"><button id="analysisPrev" type="button" aria-label="Carte précédente">←</button><button id="analysisNext" type="button" aria-label="Carte suivante">→</button></div></div>
   </div>
 </section>
@@ -231,7 +242,7 @@ main::after { top: 520px; opacity: .45; }
 (() => {
   const content = {
     fr: {
-      title: 'Analyse démographique', note: 'Tendances, conséquences et recommandations pour le Brésil.', hint: 'Sélectionnez une carte ou utilisez les flèches pour continuer.', previous: 'Carte précédente', next: 'Carte suivante', tabsLabel: 'Choisir une partie de l’analyse',
+      title: 'Analyse démographique', note: 'Tendances, conséquences et recommandations pour le Brésil.', photosTitle: 'Illustrations temporaires', photoAlt: 'Vue urbaine de', hint: 'Sélectionnez une carte ou utilisez les flèches pour continuer.', previous: 'Carte précédente', next: 'Carte suivante', tabsLabel: 'Choisir une partie de l’analyse',
       cards: [
         ['Tendances', 'L’accroissement migratoire est négatif au Brésil, de −217 283 personnes en 2025. Cependant, l’accroissement naturel compense la décroissance migratoire, ce qui maintient une croissance démographique positive, malgré un taux de fécondité sous le seuil de renouvellement des générations.'],
         ['Conséquences', 'Une bonne croissance démographique signifie que le pays ne devrait pas manquer de main-d’œuvre ni connaître de vieillissement de la population. Il y aura assez de jeunes pour soutenir les personnes âgées, qui n’auront plus à travailler jusqu’à un âge très élevé. Cependant, un trop grand nombre de jeunes peut entraîner un manque de ressources, comme un accès insuffisant à l’éducation, ainsi qu’une hausse des prix qui affecte la qualité de vie des familles.'],
@@ -239,7 +250,7 @@ main::after { top: 520px; opacity: .45; }
       ]
     },
     en: {
-      title: 'Demographic analysis', note: 'Trends, consequences and recommendations for Brazil.', hint: 'Choose a card or use the arrows to continue.', previous: 'Previous card', next: 'Next card', tabsLabel: 'Choose a part of the analysis',
+      title: 'Demographic analysis', note: 'Trends, consequences and recommendations for Brazil.', photosTitle: 'Temporary images', photoAlt: 'City view:', hint: 'Choose a card or use the arrows to continue.', previous: 'Previous card', next: 'Next card', tabsLabel: 'Choose a part of the analysis',
       cards: [
         ['Trends', 'Brazil’s net migration was negative, at −217,283 people in 2025. However, natural increase offsets the migration decline, keeping population growth positive even though the fertility rate is below the generational replacement level.'],
         ['Consequences', 'Healthy population growth can help the country avoid labour shortages and population aging. There will be enough young people to support older adults, who will not have to work to a very advanced age. However, too many young people can strain resources, including access to education, and drive up prices, affecting families’ quality of life.'],
@@ -247,7 +258,7 @@ main::after { top: 520px; opacity: .45; }
       ]
     },
     pt: {
-      title: 'Análise demográfica', note: 'Tendências, consequências e recomendações para o Brasil.', hint: 'Escolha um cartão ou use as setas para continuar.', previous: 'Cartão anterior', next: 'Próximo cartão', tabsLabel: 'Escolha uma parte da análise',
+      title: 'Análise demográfica', note: 'Tendências, consequências e recomendações para o Brasil.', photosTitle: 'Imagens temporárias', photoAlt: 'Vista urbana de', hint: 'Escolha um cartão ou use as setas para continuar.', previous: 'Cartão anterior', next: 'Próximo cartão', tabsLabel: 'Escolha uma parte da análise',
       cards: [
         ['Tendências', 'O saldo migratório do Brasil foi negativo, com −217.283 pessoas em 2025. No entanto, o crescimento natural compensa a queda migratória e mantém o crescimento populacional positivo, apesar de a taxa de fecundidade estar abaixo do nível de reposição das gerações.'],
         ['Consequências', 'Um crescimento populacional saudável pode evitar a falta de mão de obra e o envelhecimento da população. Haverá jovens suficientes para apoiar as pessoas idosas, que não precisarão trabalhar até uma idade muito avançada. Porém, um número excessivo de jovens pode pressionar os recursos, como o acesso à educação, e elevar os preços, afetando a qualidade de vida das famílias.'],
@@ -273,6 +284,10 @@ main::after { top: 520px; opacity: .45; }
     tabs.innerHTML = text.cards.map((item, i) => `<button class="analysis-tab" type="button" role="tab" id="analysis-tab-${i}" aria-controls="analysisCard" aria-selected="${i === index}" data-index="${i}"><span>0${i + 1}</span><strong>${item[0]}</strong></button>`).join('');
     card.setAttribute('aria-labelledby', `analysis-tab-${index}`);
     card.innerHTML = `<div class="analysis-card-header"><span class="analysis-number">0${index + 1} / 03</span><h3 id="analysisCardTitle">${text.cards[index][0]}</h3></div><div class="analysis-copy">${text.cards[index][1].split('<br><br>').map(paragraph => `<p>${paragraph}</p>`).join('')}</div>`;
+    document.getElementById('analysisGalleryTitle').textContent = text.photosTitle;
+    document.getElementById('photoSaoPaulo').alt = `${text.photoAlt} São Paulo`;
+    document.getElementById('photoRio').alt = `${text.photoAlt} Rio de Janeiro`;
+    document.getElementById('photoSalvador').alt = `${text.photoAlt} Salvador`;
     card.classList.remove('arrive');
     requestAnimationFrame(() => card.classList.add('arrive'));
     dots.innerHTML = text.cards.map((_, i) => `<button type="button" aria-label="${i + 1} / 3" aria-current="${i === index ? 'step' : 'false'}" data-index="${i}"></button>`).join('');
