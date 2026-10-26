@@ -5,7 +5,7 @@
 | **Taux de fécondité**<br>*(nbr d’enfants/femme)* | 1,25 enfants/femme (2024) | 1,61 enfants/femme (2024) |
 | **Taux de natalité**<br>*(par 1000 habs.)* | 8,9 ‰ (2024) | 12,13 ‰ (2024) |
 | **Taux de mortalité**<br>*(par 1000 habs.)* | 7,9 ‰ (2024) | 7,07 ‰ (2024) |
-| **Accroissement naturel** | 1,0 ‰ (2024) | 5,06 ‰ (2024) |
+| **Accroissement naturel** | 41 262,329 personnes (2024) | 1 072 712,779 personnes (2024) |
 | **Accroissement migratoire** | 326 204 personnes (2025) | -217 283 personnes (2025) |
 
 Extra paragraph:

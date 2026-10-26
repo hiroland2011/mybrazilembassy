@@ -5,9 +5,9 @@
   const savedLanguage = localStorage.getItem('embassyDemoLanguage');
   const language = ['en', 'pt'].includes(savedLanguage) ? savedLanguage : 'fr';
   const labelsByLanguage = {
-    fr: { brand: 'Brésil<small>Ambassade du Canada au Brésil</small>', home: 'Accueil', countryMenu: 'Informations sur le pays', countryFacts: "Fiches d'informations générales", topicsMenu: 'Fiches thématiques', demography: 'Démographie', issues: "3 enjeux de l'année à surveiller", history: 'Histoire contemporaine du pays', leader: 'Fiche du chef d’État', about: 'À propos', login: 'Connexion', menu: 'Menu', navigation: 'Navigation', profile: 'Profil', changeLanguage: 'Changer de langue', menuOpen: 'Ouvrir le menu', menuClose: 'Fermer le menu' },
-    en: { brand: 'Brazil<small>Embassy of Canada in Brazil</small>', home: 'Home', countryMenu: 'Country information', countryFacts: 'General information', topicsMenu: 'Thematic fact sheets', demography: 'Demography', issues: '3 issues to watch this year', history: 'Contemporary history of the country', leader: 'Head of State profile', about: 'About us', login: 'Sign in', menu: 'Menu', navigation: 'Navigation', profile: 'Profile', changeLanguage: 'Change language', menuOpen: 'Open menu', menuClose: 'Close menu' },
-    pt: { brand: 'Brasil<small>Embaixada do Canadá no Brasil</small>', home: 'Início', countryMenu: 'Informações sobre o país', countryFacts: 'Informações gerais', topicsMenu: 'Fichas temáticas', demography: 'Demografia', issues: '3 desafios a acompanhar este ano', history: 'História contemporânea do país', leader: 'Perfil do chefe de Estado', about: 'Sobre nós', login: 'Entrar', menu: 'Menu', navigation: 'Navegação', profile: 'Perfil', changeLanguage: 'Mudar idioma', menuOpen: 'Abrir o menu', menuClose: 'Fechar o menu' }
+    fr: { brand: 'Brésil<small>Ambassade du Canada au Brésil</small>', home: 'Accueil', countryMenu: 'Informations sur le pays', countryFacts: "Fiches d'informations générales", topicsMenu: 'Fiches thématiques', population: 'Population', issues: "3 enjeux de l'année à surveiller", history: 'Histoire contemporaine du pays', leader: 'Fiche du chef d’État', about: 'À propos', login: 'Connexion', menu: 'Menu', navigation: 'Navigation', profile: 'Profil', changeLanguage: 'Changer de langue', menuOpen: 'Ouvrir le menu', menuClose: 'Fermer le menu' },
+    en: { brand: 'Brazil<small>Embassy of Canada in Brazil</small>', home: 'Home', countryMenu: 'Country information', countryFacts: 'General information', topicsMenu: 'Thematic fact sheets', population: 'Population', issues: '3 issues to watch this year', history: 'Contemporary history of the country', leader: 'Head of State profile', about: 'About us', login: 'Sign in', menu: 'Menu', navigation: 'Navigation', profile: 'Profile', changeLanguage: 'Change language', menuOpen: 'Open menu', menuClose: 'Close menu' },
+    pt: { brand: 'Brasil<small>Embaixada do Canadá no Brasil</small>', home: 'Início', countryMenu: 'Informações sobre o país', countryFacts: 'Informações gerais', topicsMenu: 'Fichas temáticas', population: 'Population', issues: '3 desafios a acompanhar este ano', history: 'História contemporânea do país', leader: 'Perfil do chefe de Estado', about: 'Sobre nós', login: 'Entrar', menu: 'Menu', navigation: 'Navegação', profile: 'Perfil', changeLanguage: 'Mudar idioma', menuOpen: 'Abrir o menu', menuClose: 'Fechar o menu' }
   };
   const labels = labelsByLanguage[language];
   const footerVariant = page === 'information_sur_le_pays.html' ? 'country' : 'default';
@@ -50,7 +50,7 @@
     };
     const countryPages = ['information_sur_le_pays.html', 'enjeux_a_suivre.html', 'histoire_contemporaine.html', 'fiche_sur_le_chef.html'];
     const countryActive = countryPages.includes(page);
-    const topicPages = ['brezil_vs_canada.html'];
+    const topicPages = ['population.html'];
     const topicsActive = topicPages.includes(page);
     const countryLink = makeLink('information_sur_le_pays.html', 'countryFacts', labels.countryFacts);
     const countryLinks = [
@@ -59,7 +59,7 @@
       makeLink('histoire_contemporaine.html', 'history', labels.history),
       makeLink('fiche_sur_le_chef.html', 'leader', labels.leader)
     ].join('');
-    const topicLinks = makeLink('brezil_vs_canada.html', 'demography', labels.demography);
+    const topicLinks = makeLink('population.html', 'population', labels.population);
     const aboutLink = makeLink('a_propos.html', 'about', labels.about);
     script.insertAdjacentHTML('beforebegin', `
       <header class="site-header" data-site-chrome><div class="wrap nav">
